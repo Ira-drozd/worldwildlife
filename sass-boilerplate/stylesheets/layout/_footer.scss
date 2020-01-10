@@ -1,3 +1,100 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+
+
+.dark-footer {
+  background: black;
+  padding: 24px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+   // align-items: center;
+    padding: 10px 0;
+
+    .email-footer, .login-footer {
+      display: flex;
+
+      p {
+        @include fonts(15px, normal, #ccc);
+        padding-left: 5px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .btn-simple {
+
+        margin-left: 10px;
+        display: flex;
+
+        a {
+          @include fonts(12px, 800, white);
+          background: $dark-orange;
+          text-transform: uppercase;
+          font-style: italic;
+//padding: 9px;
+          padding: 9px 25px 10px 15px;
+          text-decoration: none;
+        }
+
+        &:hover {
+          a {
+            background: $light-orange;
+            transition-duration: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bottom-footer {
+
+  padding: 30px 15px 40px;
+
+  .logo {
+    float: right;
+  }
+
+  ul.nav{
+    margin: 0 10px 16px 0;
+
+    li{
+      margin-right: 25px;
+    }
+
+  }
+
+  a.nav-link{
+    padding: 0;
+    line-height: 10px;
+    //margin:  0 0 5px 0;
+    @include fonts(13px, 750, $blue-links);
+    border-bottom: 1px solid white;
+
+
+    &:hover{
+
+      border-bottom: 1px solid $blue-links;
+      transition: all 0.25s ease-in-out;
+
+    }
+  }
+
+  address{
+    margin: 30px 0;
+    @include fonts(13px, normal, #444);
+  }
+
+  .copyright{
+    @include fonts(12px, normal, #9d9c9c);
+  }
+
+  .icons-footer{
+    margin-bottom: 30px;
+  }
+
+}

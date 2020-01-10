@@ -845,6 +845,90 @@ body {
     flex-direction: column;
   }
 }
+.hidden {
+  position: absolute;
+  z-index: -1;
+}
+
+.dark-footer {
+  background: black;
+  padding: 24px 0;
+}
+.dark-footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.dark-footer .container .email-footer, .dark-footer .container .login-footer {
+  display: flex;
+}
+.dark-footer .container .email-footer p, .dark-footer .container .login-footer p {
+  font-size: 15px;
+  font-weight: normal;
+  color: #ccc;
+  padding-left: 5px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.dark-footer .container .email-footer .btn-simple, .dark-footer .container .login-footer .btn-simple {
+  margin-left: 10px;
+  display: flex;
+}
+.dark-footer .container .email-footer .btn-simple a, .dark-footer .container .login-footer .btn-simple a {
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+  background: #d55c19;
+  text-transform: uppercase;
+  font-style: italic;
+  padding: 9px 25px 10px 15px;
+  text-decoration: none;
+}
+.dark-footer .container .email-footer .btn-simple:hover a, .dark-footer .container .login-footer .btn-simple:hover a {
+  background: #e98300;
+  transition-duration: 0.4s;
+}
+
+.bottom-footer {
+  padding: 30px 15px 40px;
+}
+.bottom-footer .logo {
+  float: right;
+}
+.bottom-footer ul.nav {
+  margin: 0 10px 16px 0;
+}
+.bottom-footer ul.nav li {
+  margin-right: 25px;
+}
+.bottom-footer a.nav-link {
+  padding: 0;
+  line-height: 10px;
+  font-size: 13px;
+  font-weight: 750;
+  color: #006ea5;
+  border-bottom: 1px solid white;
+}
+.bottom-footer a.nav-link:hover {
+  border-bottom: 1px solid #006ea5;
+  transition: all 0.25s ease-in-out;
+}
+.bottom-footer address {
+  margin: 30px 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #444;
+}
+.bottom-footer .copyright {
+  font-size: 12px;
+  font-weight: normal;
+  color: #9d9c9c;
+}
+.bottom-footer .icons-footer {
+  margin-bottom: 30px;
+}
+
 @font-face {
   font-family: WfWebfont;
   /* Гарнитура шрифта */
@@ -855,27 +939,32 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/*#header {
-  min-height: 550px;
+#header {
+  min-height: 350px;
   position: relative;
-
-&:before {
+  /*  &:after {
+      content: "<h1>h111</h1>";
+      color: white;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      min-height: 300px;
+    }*/
+}
+#header:before {
   content: "";
   display: block;
   position: absolute;
   z-index: -1;
   width: 100%;
-  min-height: 600px;
+  min-height: 300px;
   background-image: url("images/background/RSwwfau_13397_web.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size:100%;
+  background-size: 100%;
 }
-}*/
+
 #navbar-container {
   background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
 }
