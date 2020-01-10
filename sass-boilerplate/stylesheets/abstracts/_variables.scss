@@ -3,9 +3,6 @@
 // -----------------------------------------------------------------------------
 
 
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -13,9 +10,6 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
 
 
 /// Copy text color
@@ -39,29 +33,19 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
-
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+        'small': 320px,
+        'medium': 768px,
+        'large': 1024px,
 ) !default;
-
-
-
-
 
 
 /// Relative or absolute URL where all assets are served from
@@ -76,13 +60,25 @@ $light-orange: #e98300;
 
 $blue-menu: #0493da;
 
-$blue-links:rgb(0, 110, 165);
+$blue-links: rgb(0, 110, 165);
 
-$gray-links:rgb(68, 68, 68, 0.9);
+$gray-links: rgb(68, 68, 68, 0.9);
 
-$gray-dotted:rgb(68, 68, 68, 0.3);
+$gray-dotted: rgb(68, 68, 68, 0.3);
 
-$dark-gray-menu:#222;
+$dark-gray-menu: #222;
 
-$light-grey-menu:#989b97;
+$light-grey-menu: #989b97;
+
+$icon-facebook: #3e559c;
+
+$icon-twitter: #2acaff;
+
+$icon-instagram: #306992;
+
+$icon-youtube: #ce280d;
+
+$icon-rss: #f98e04;
+
+
 

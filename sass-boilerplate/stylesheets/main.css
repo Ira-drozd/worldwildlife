@@ -556,6 +556,10 @@ body {
   background: url("../images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
 
 }*/
+#desktop-navbar {
+  padding: 20px 10px 12px;
+}
+
 #mobile-navbar {
   display: none;
 }
@@ -576,6 +580,7 @@ body {
 }
 #navbar-container .sub-menu a, #navbar-container .dark-sub-menu a {
   padding: 10px 5px;
+  line-height: 21px;
 }
 
 #navbar-subcontainer {
@@ -608,6 +613,18 @@ body {
   width: 15px;
 }
 
+.nav-push-left > li {
+  /*  &:hover {
+      > a {
+        background: white;
+        color: $blue-menu;
+      }
+  
+      .sub-menu {
+        display: flex;
+      }
+    }*/
+}
 .nav-push-left > li > a {
   font-size: 24px;
   font-weight: normal;
@@ -615,14 +632,19 @@ body {
   font-family: "WfWebfont";
   text-transform: uppercase;
 }
-.nav-push-left > li:hover > a {
-  background: white;
-  color: #0493da;
-}
-.nav-push-left > li:hover .sub-menu {
-  display: flex;
-}
 
+.nav-push-right > li {
+  /* &:hover {
+      > a {
+        background: $dark-gray-menu;
+        color: white;
+      }
+  
+      .dark-sub-menu {
+        display: flex;
+      }
+    }*/
+}
 .nav-push-right > li > a {
   font-size: 17px;
   font-weight: bold;
@@ -630,13 +652,6 @@ body {
   text-transform: uppercase;
   font-family: "WfWebfont";
   letter-spacing: 2px;
-}
-.nav-push-right > li:hover > a {
-  background: #222;
-  color: white;
-}
-.nav-push-right > li:hover .dark-sub-menu {
-  display: flex;
 }
 
 .sub-menu {
@@ -707,14 +722,15 @@ body {
   font-size: 13px;
   font-weight: 800;
   color: white;
+  padding: 10px 20px;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 21px;
 }
-#nav-button .nav-button-left a.nav-link, #down-nav-button .nav-button-left a.nav-link {
+#nav-button .nav-button-left > a.nav-link, #down-nav-button .nav-button-left > a.nav-link {
   background: #d55c19;
   color: white;
 }
-#nav-button .nav-button-right a.nav-link, #down-nav-button .nav-button-right a.nav-link {
+#nav-button .nav-button-right > a.nav-link, #down-nav-button .nav-button-right > a.nav-link {
   background: #e98300;
 }
 
@@ -739,13 +755,30 @@ body {
   right: 10px;
 }
 
-#nav-button > li:hover > a.nav-link {
-  background: #222;
-}
-#nav-button > li:hover .dark-sub-menu {
-  display: flex;
-}
+@media (min-width: 1000px) {
+  #nav-button > li:hover > a.nav-link {
+    background: #222;
+  }
+  #nav-button > li:hover .dark-sub-menu {
+    display: flex;
+  }
 
+  .nav-push-right > li:hover > a {
+    background: #222;
+    color: white;
+  }
+  .nav-push-right > li:hover .dark-sub-menu {
+    display: flex;
+  }
+
+  .nav-push-left > li:hover > a {
+    background: white;
+    color: #0493da;
+  }
+  .nav-push-left > li:hover .sub-menu {
+    display: flex;
+  }
+}
 @media (max-width: 768px) {
   #mobile-navbar {
     display: block;
@@ -866,13 +899,13 @@ body {
   font-size: 15px;
   font-weight: normal;
   color: #ccc;
-  padding-left: 5px;
+  padding: 0 10px;
   margin: 0;
   display: flex;
   align-items: center;
 }
 .dark-footer .container .email-footer .btn-simple, .dark-footer .container .login-footer .btn-simple {
-  margin-left: 10px;
+  margin: 5px 10px;
   display: flex;
 }
 .dark-footer .container .email-footer .btn-simple a, .dark-footer .container .login-footer .btn-simple a {
@@ -890,6 +923,17 @@ body {
   transition-duration: 0.4s;
 }
 
+@media (max-width: 820px) {
+  .email-footer, .login-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .bottom-footer .logo {
+    display: none;
+  }
+}
 .bottom-footer {
   padding: 30px 15px 40px;
 }
@@ -904,7 +948,7 @@ body {
 }
 .bottom-footer a.nav-link {
   padding: 0;
-  line-height: 10px;
+  line-height: 20px;
   font-size: 13px;
   font-weight: 750;
   color: #006ea5;
@@ -927,6 +971,29 @@ body {
 }
 .bottom-footer .icons-footer {
   margin-bottom: 30px;
+}
+.bottom-footer .icons-footer a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.bottom-footer .icons-footer svg {
+  width: 30px;
+  height: 30px;
+}
+.bottom-footer .icons-footer .ico-facebook {
+  color: #3e559c;
+}
+.bottom-footer .icons-footer .ico-twitter {
+  color: #2acaff;
+}
+.bottom-footer .icons-footer .ico-instagram {
+  color: #306992;
+}
+.bottom-footer .icons-footer .ico-youtube {
+  color: #ce280d;
+}
+.bottom-footer .icons-footer .ico-rss {
+  color: #f98e04;
 }
 
 @font-face {

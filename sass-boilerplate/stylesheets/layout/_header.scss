@@ -9,6 +9,10 @@
 
 }*/
 
+#desktop-navbar{
+  padding: 20px 10px 12px;
+}
+
 #mobile-navbar{
   display: none;
 }
@@ -32,6 +36,8 @@
   .sub-menu, .dark-sub-menu, {
     a {
       padding: 10px 5px;
+      line-height: 21px;
+
     }
 
     padding: 0 15px;
@@ -46,6 +52,7 @@
 
   a {
     padding: 5px 15px;
+
   }
 
   li {
@@ -86,7 +93,7 @@
     text-transform: uppercase;
   }
 
-  &:hover {
+/*  &:hover {
     > a {
       background: white;
       color: $blue-menu;
@@ -95,7 +102,7 @@
     .sub-menu {
       display: flex;
     }
-  }
+  }*/
 }
 
 .nav-push-right > li {
@@ -109,7 +116,7 @@
     letter-spacing: 2px;
   }
 
-  &:hover {
+ /* &:hover {
     > a {
       background: $dark-gray-menu;
       color: white;
@@ -118,7 +125,7 @@
     .dark-sub-menu {
       display: flex;
     }
-  }
+  }*/
 }
 
 .sub-menu {
@@ -200,24 +207,22 @@
   a.nav-link {
     border-radius: 2px;
     @include fonts(13px, 800, white);
-    //  padding: 10px 15px;
+      padding: 10px 20px;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 21px;
+
   }
 
-  .nav-button-left a.nav-link {
+  .nav-button-left > a.nav-link {
     background: $dark-orange;
     color: white;
+   // line-height: 35px;
   }
 
-  .nav-button-right a.nav-link {
+  .nav-button-right > a.nav-link {
     background: $light-orange;
+   // line-height: 35px;
   }
-
-}
-
-
-@media (max-width: 1000px) {
 
 }
 
@@ -248,19 +253,53 @@
   }
 }
 
-#nav-button > li {
+@media (min-width: 1000px){
 
-  &:hover {
-    > a.nav-link {
-      background: $dark-gray-menu;
+  #nav-button > li {
+
+    &:hover {
+      > a.nav-link {
+        background: $dark-gray-menu;
+      }
+
+      .dark-sub-menu {
+         display: flex;
+      }
+
     }
-
-    .dark-sub-menu {
-      display: flex;
-    }
-
   }
+
+  .nav-push-right > li {
+
+     &:hover {
+       > a {
+         background: $dark-gray-menu;
+         color: white;
+       }
+
+       .dark-sub-menu {
+         display: flex;
+       }
+     }
+  }
+
+  .nav-push-left > li {
+
+      &:hover {
+        > a {
+          background: white;
+          color: $blue-menu;
+        }
+
+        .sub-menu {
+          display: flex;
+        }
+      }
+  }
+
 }
+
+
 
 @media (max-width: 768px) {
 

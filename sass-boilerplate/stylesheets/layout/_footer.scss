@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 
-
 .dark-footer {
   background: black;
   padding: 24px 0;
@@ -11,7 +10,7 @@
   .container {
     display: flex;
     justify-content: space-between;
-   // align-items: center;
+    // align-items: center;
     padding: 10px 0;
 
     .email-footer, .login-footer {
@@ -19,7 +18,7 @@
 
       p {
         @include fonts(15px, normal, #ccc);
-        padding-left: 5px;
+        padding: 0 10px;
         margin: 0;
         display: flex;
         align-items: center;
@@ -27,7 +26,7 @@
 
       .btn-simple {
 
-        margin-left: 10px;
+        margin: 5px 10px;
         display: flex;
 
         a {
@@ -35,7 +34,7 @@
           background: $dark-orange;
           text-transform: uppercase;
           font-style: italic;
-//padding: 9px;
+          //padding: 9px;
           padding: 9px 25px 10px 15px;
           text-decoration: none;
         }
@@ -51,6 +50,24 @@
   }
 }
 
+@media (max-width: 820px) {
+
+  .email-footer, .login-footer{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 600px) {
+.bottom-footer{
+  .logo{
+    display: none;
+  }
+}
+
+}
+
 .bottom-footer {
 
   padding: 30px 15px 40px;
@@ -59,24 +76,24 @@
     float: right;
   }
 
-  ul.nav{
+  ul.nav {
     margin: 0 10px 16px 0;
 
-    li{
+    li {
       margin-right: 25px;
     }
 
   }
 
-  a.nav-link{
+  a.nav-link {
     padding: 0;
-    line-height: 10px;
+    line-height: 20px;
     //margin:  0 0 5px 0;
     @include fonts(13px, 750, $blue-links);
     border-bottom: 1px solid white;
 
 
-    &:hover{
+    &:hover {
 
       border-bottom: 1px solid $blue-links;
       transition: all 0.25s ease-in-out;
@@ -84,17 +101,48 @@
     }
   }
 
-  address{
+  address {
     margin: 30px 0;
     @include fonts(13px, normal, #444);
   }
 
-  .copyright{
+  .copyright {
     @include fonts(12px, normal, #9d9c9c);
   }
 
-  .icons-footer{
+  .icons-footer {
     margin-bottom: 30px;
+
+    a{
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .ico-facebook {
+      color: $icon-facebook;
+    }
+
+    .ico-twitter {
+      color: $icon-twitter;
+    }
+
+    .ico-instagram {
+      color: $icon-instagram;
+    }
+
+    .ico-youtube {
+      color: $icon-youtube;
+    }
+
+    .ico-rss{
+      color: $icon-rss;
+    }
+
   }
 
 }
