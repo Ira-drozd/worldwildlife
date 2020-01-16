@@ -17,7 +17,7 @@
       display: flex;
 
       p {
-        @include fonts(15px, normal, #ccc);
+        @include fonts(15px, normal, $main-text-color);
         padding: 0 10px;
         margin: 0;
         display: flex;
@@ -65,6 +65,13 @@
     display: none;
   }
 }
+
+  .dark-footer {
+
+    .container {
+      flex-direction: column;
+    }
+  }
 
 }
 

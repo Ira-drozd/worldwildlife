@@ -24,17 +24,13 @@
 @import 'components/button';
 
 // 6. Page-specific styles
-@import 'pages/home';
+@import 'pages/home', 'pages/worldwildlife';
 
 // 7. Themes
 @import 'themes/default';
 
-@font-face {
-  font-family: WfWebfont; /* Гарнитура шрифта */
-  src: url(base/wwf-webfont.ttf); /* Путь к файлу со шрифтом */
-}
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 
 body{
   font-family: 'Open Sans', sans-serif;
@@ -44,36 +40,4 @@ body{
  // box-sizing: border-box;
 }
 
-#header {
-  min-height: 350px;
-  position: relative;
 
-&:before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  min-height: 300px;
-  background-image: url("images/background/RSwwfau_13397_web.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size:100%;
-}
-
-/*  &:after {
-    content: "<h1>h111</h1>";
-    color: white;
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    min-height: 300px;
-  }*/
-
-}
-
-#navbar-container{
-  background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
-
-}
