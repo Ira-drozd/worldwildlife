@@ -4,3 +4,9 @@
   color: $color;
 }
 
+@mixin background-grid-card($background-image, $background-repeat, $background-position){
+  background-image: $background-image;
+  background-repeat: $background-repeat;
+  background-position: $background-position;
+  background-size: cover;
+}

@@ -1134,18 +1134,18 @@ body {
   background: #f6f5f2;
 }
 
-.circle-card {
+.circle-card-homepage {
   color: #444;
   text-align: center;
   padding: 50px 0;
 }
-.circle-card .card-title {
+.circle-card-homepage .card-title {
   font-size: 16px;
   font-weight: bold;
   line-height: 40px;
   text-transform: uppercase;
 }
-.circle-card .card-title:after, .circle-card .card-title:before {
+.circle-card-homepage .card-title:after, .circle-card-homepage .card-title:before {
   background: rgba(80, 55, 55, 0.15);
   content: "";
   display: block;
@@ -1153,28 +1153,206 @@ body {
   margin: 0 auto;
   width: 80px;
 }
-.circle-card .intro {
+.circle-card-homepage .intro {
   margin: 45px 0 0;
 }
-.circle-card .intro p {
+.circle-card-homepage .intro p {
   font-size: 15px;
   margin: 0;
 }
-.circle-card .intro .highlight {
+.circle-card-homepage .intro .highlight {
   margin-bottom: 1.5em;
   font-size: 24px;
   line-height: 1.3;
 }
-.circle-card .circle-card-pillars {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.circle-card .circle-card-pillars .circle-card-item img {
+.circle-card-homepage .circle-card-pillars .circle-card-item img {
   border-radius: 50%;
-  margin: 0 45px;
+}
+.circle-card-homepage .circle-card-pillars .circle-card-item a h4 {
+  font-family: WfWebfont;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.circle-card-homepage .food a {
+  color: #b71234;
+}
+.circle-card-homepage .climate a {
+  color: #d55c19;
+}
+.circle-card-homepage .fresh-water a {
+  color: #00675a;
+}
+.circle-card-homepage .wildlife a {
+  color: #53284f;
+}
+.circle-card-homepage .forests a {
+  color: #55601c;
+}
+.circle-card-homepage .oceans a {
+  color: #006983;
 }
 
+.grid-card-section .container {
+  display: flex;
+  justify-content: center;
+}
+.grid-card-section .grid-card-item {
+  background: #0c5460;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.grid-card-section .grid-card-item .grid-card-content {
+  background: #1c7430;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 30px;
+}
+
+.grid-card-homepage {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 590px 590px;
+  grid-template-rows: 480px 480px 480px;
+  grid-gap: 10px;
+}
+.grid-card-homepage .grid-card-2, .grid-card-homepage .grid-card-3, .grid-card-homepage .grid-card-6 {
+  display: grid;
+  grid-template-columns: 290px 290px;
+  grid-template-rows: 480px;
+  grid-gap: 10px;
+}
+.grid-card-homepage .grid-card-item.grid-card-21, .grid-card-homepage .grid-card-item.grid-card-32 {
+  display: flex;
+  align-items: flex-start;
+}
+.grid-card-homepage .grid-card-item.grid-card-21 .grid-card-content, .grid-card-homepage .grid-card-item.grid-card-32 .grid-card-content {
+  border-radius: 10px 10px 0 0;
+}
+.grid-card-homepage .grid-card-1 {
+  background-image: url("images/griscardW/shutterstock_1152324746.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-card-homepage .grid-card-22 {
+  background-image: url("images/griscardW/DRTV_homepage_polarbear.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-card-homepage .grid-card-31 {
+  background-image: url("images/griscardW/smaller_shutterstock_112976938.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-card-homepage .grid-card-4 {
+  background-image: url("images/griscardW/2020-01-ogc-valentine.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-card-homepage .grid-card-5 {
+  background-image: url("images/griscardW/Medium_WW2124502.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-card-homepage .grid-card-61 {
+  background-image: url("images/griscardW/Medium_WW1106019.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-card-homepage .grid-card-62 {
+  background-image: url("images/griscardW/Medium_WW2120967.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-help-card-homepage {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 590px 590px;
+  grid-template-rows: 480px;
+  grid-gap: 10px;
+}
+.grid-help-card-homepage .grid-card-7 {
+  background-image: url("images/griscardW/2018-11-20-pandanation-celebrate.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.grid-help-card-homepage .grid-card-8 {
+  background-image: url("images/griscardW/Small_WW164079_(1).jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  .grid-card-homepage {
+    grid-template-columns: 446px 446px;
+    grid-template-rows: 360px 360px 360px;
+  }
+  .grid-card-homepage .grid-card-2, .grid-card-homepage .grid-card-3, .grid-card-homepage .grid-card-6 {
+    grid-template-columns: 218px 218px;
+    grid-template-rows: 360px;
+  }
+
+  .grid-help-card-homepage {
+    grid-template-columns: 446px 446px;
+    grid-template-rows: 360px;
+  }
+}
+@media (max-width: 910px) {
+  .grid-card-homepage {
+    grid-template-columns: 590px;
+    grid-template-rows: 480px 480px 480px 480px 480px;
+  }
+  .grid-card-homepage .grid-card-2, .grid-card-homepage .grid-card-3, .grid-card-homepage .grid-card-6 {
+    grid-template-columns: 290px 290px;
+    grid-template-rows: 480px;
+  }
+
+  .grid-help-card-homepage {
+    grid-template-columns: 590px;
+    grid-template-rows: 480px 480px;
+  }
+}
+@media (max-width: 600px) {
+  .grid-card-homepage {
+    grid-template-columns: 446px;
+    grid-template-rows: 360px 360px 360px 360px 360px;
+  }
+  .grid-card-homepage .grid-card-2, .grid-card-homepage .grid-card-3, .grid-card-homepage .grid-card-6 {
+    grid-template-columns: 218px 218px;
+    grid-template-rows: 360px;
+  }
+
+  .grid-help-card-homepage {
+    grid-template-columns: 446px;
+    grid-template-rows: 360px 360px;
+  }
+}
+@media (max-width: 455px) {
+  .grid-card-homepage {
+    grid-template-columns: 310px;
+    grid-template-rows: 252px 252px 252px 252px 252px;
+  }
+  .grid-card-homepage .grid-card-2, .grid-card-homepage .grid-card-3, .grid-card-homepage .grid-card-6 {
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 248px;
+  }
+
+  .grid-help-card-homepage {
+    grid-template-columns: 310px;
+    grid-template-rows: 252px 252px;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
