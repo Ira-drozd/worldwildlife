@@ -244,28 +244,6 @@
 
   }
 
-  /*  @media handheld and (max-width:1000px){
-      .grid-card-item {
-
-        &:before {
-          content: " 456";
-          position: absolute;
-          //display: block;
-          width: 100%;
-          height: 100%;
-          background: url("images/background/bg-overlay-pattern-909bb457df087b9ceb234d2afef206a1ae0c34a6f1db73267c87c7666f52037a.png");
-          opacity: 1;
-          z-index: 1000;
-
-        }
-
-
-      }
-    }*/
-
-
-  /* $green-color: green;
-   $test: 2125036;*/
 
   @for $i from 1 through 15 {
     .#{$class-name}-#{$i} {
@@ -275,10 +253,6 @@
       background-position: center center;
     }
   }
-
-  /*.grid-card-1 {
-    background-color: yellow;
-  }*/
 
 
 }
@@ -291,10 +265,9 @@
 
     color: $main-text-color;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 50px;
     overflow: hidden;
     position: relative;
-    padding: 0 50px;
 
     .card-title {
       font-size: 16px;
@@ -351,27 +324,31 @@
       left: 0px;
       box-shadow: 6px 0 5px -5px rgba(0, 0, 0, 0.35);
       background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.5));
-     span{
-       transition: 0.25s;
-     }
-    &:hover{
-      span{
-        margin-right: 20px;
-        color: $blue-menu;
+
+      span {
         transition: 0.25s;
       }
-    }
+
+      &:hover {
+        span {
+          margin-right: 20px;
+          color: $blue-menu;
+          transition: 0.25s;
+        }
+      }
     }
 
     .next {
       right: 0px;
       box-shadow: -6px 0 5px -5px rgba(0, 0, 0, 0.35);
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgb(255, 255, 255));
-      span{
+
+      span {
         transition: 0.25s;
       }
-      &:hover{
-        span{
+
+      &:hover {
+        span {
           margin-left: 20px;
           color: $blue-menu;
           transition: 0.25s;
@@ -384,16 +361,61 @@
 
   .circle-card-marineanimals {
 
-    $class-name-marineanimals: "card-item";
 
     @for $i from 1 through 13 {
-      .#{$class-name-marineanimals}-#{$i} {
+      .#{$class-name-circle}-#{$i} {
 
         // background: #6f42c1;
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        background-image: url("images/circlecardmarineanimals/#{$class-name-marineanimals}-#{$i}.jpg");
+        background-image: url("images/circlecardmarineanimals/#{$class-name-circle}-#{$i}.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+
+  }
+
+  .circle-card-primates {
+
+
+    @for $i from 1 through 6 {
+      .#{$class-name-circle}-#{$i} {
+
+        // background: #6f42c1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url("images/circlecardprimates/#{$class-name-circle}-#{$i}.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+
+    /*@media (min-width: 1140px) {
+
+      .arrow{
+        display: none;
+      }
+      
+    }*/
+
+  }
+
+  .circle-card-bigcats {
+
+
+    @for $i from 1 through 5 {
+      .#{$class-name-circle}-#{$i} {
+
+        // background: #6f42c1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url("images/circlecardbigcats/#{$class-name-circle}-#{$i}.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -405,4 +427,130 @@
 }
 
 
+.grid-species-section {
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 
+  .grid-species {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(1, 320px);
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 1000px) {
+    .grid-species {
+      grid-template-columns: repeat(3, 32vw);
+      grid-template-rows: repeat(1, 32vw);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .grid-species {
+      grid-template-columns: repeat(1, 320px);
+      grid-template-rows: repeat(3, 320px);
+    }
+  }
+
+ /* @media (max-width: 480px) {
+    .grid-card-item {
+
+      img {
+        display: none
+      }
+    }
+  }*/
+
+  .grid-card-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  .grid-card-1 {
+
+    #grid-species-form {
+      @extend %flex-center;
+
+    }
+
+    label {
+      @extend %flex-center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    input {
+      height: 38px;
+      width: 100%;
+    }
+
+    input::placeholder {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    button {
+      position: absolute;
+      right: 10px;
+      bottom: 3px;
+      width: 32px;
+      height: 32px;
+      background: #312626;
+      border: none;
+      border-radius: 50%;
+
+      svg {
+        color: white;
+      }
+    }
+
+  }
+
+  .grid-card-2, .grid-card-3 {
+
+    position: relative;
+
+    .btn-species {
+      position: absolute;
+      bottom: 10px;
+      right: 8px;
+      padding: 9px 15px 9px 15px;
+      background: black;
+      @include fonts(12px, bold, white);
+      font-style: italic;
+      text-transform: uppercase;
+
+      span {
+        margin-left: 10px;
+        font-size: 15px;
+        transition: 0.25s;
+      }
+
+      &:hover {
+        span {
+          color: $blue-links;
+          transition: 0.25s;
+        }
+      }
+    }
+
+    .promo-text {
+      position: absolute;
+      @include fonts(13px, bold, black);
+      padding: 5px;
+      text-align: center;
+    }
+
+  }
+
+}

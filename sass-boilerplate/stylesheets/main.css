@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-.grid-card-species-section .grid-card-item, .grid-card-species-section .grid-card-content .arrow, .grid-card-species-section .grid-card-content, .grid-card-species-section .text-content, .help-project-section .row {
+.grid-species-section .grid-card-1 label, .grid-species-section .grid-card-1 #grid-species-form, .grid-card-species-section .grid-card-item, .grid-card-species-section .grid-card-content .arrow, .grid-card-species-section .grid-card-content, .grid-card-species-section .text-content, .help-project-section .row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1666,31 +1666,6 @@ body {
   }
 }
 /* GRID-SRCTION  */
-.grid-card-species-section {
-  /*  @media handheld and (max-width:1000px){
-      .grid-card-item {
-
-        &:before {
-          content: " 456";
-          position: absolute;
-          //display: block;
-          width: 100%;
-          height: 100%;
-          background: url("images/background/bg-overlay-pattern-909bb457df087b9ceb234d2afef206a1ae0c34a6f1db73267c87c7666f52037a.png");
-          opacity: 1;
-          z-index: 1000;
-
-        }
-
-
-      }
-    }*/
-  /* $green-color: green;
-   $test: 2125036;*/
-  /*.grid-card-1 {
-    background-color: yellow;
-  }*/
-}
 .grid-card-species-section a {
   text-decoration: none;
 }
@@ -1902,10 +1877,9 @@ body {
 .circle-card-section .circle-card-marineanimals, .circle-card-section .circle-card-primates, .circle-card-section .circle-card-bigcats {
   color: #444;
   text-align: center;
-  padding: 40px 0;
+  padding: 40px 50px;
   overflow: hidden;
   position: relative;
-  padding: 0 50px;
 }
 .circle-card-section .circle-card-marineanimals .card-title, .circle-card-section .circle-card-primates .card-title, .circle-card-section .circle-card-bigcats .card-title {
   font-size: 16px;
@@ -2093,6 +2067,214 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+.circle-card-section .circle-card-primates {
+  /*@media (min-width: 1140px) {
+
+    .arrow{
+      display: none;
+    }
+
+  }*/
+}
+.circle-card-section .circle-card-primates .card-item-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardprimates/card-item-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-primates .card-item-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardprimates/card-item-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-primates .card-item-3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardprimates/card-item-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-primates .card-item-4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardprimates/card-item-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-primates .card-item-5 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardprimates/card-item-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-primates .card-item-6 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardprimates/card-item-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-bigcats .card-item-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardbigcats/card-item-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-bigcats .card-item-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardbigcats/card-item-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-bigcats .card-item-3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardbigcats/card-item-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-bigcats .card-item-4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardbigcats/card-item-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-bigcats .card-item-5 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardbigcats/card-item-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid-species-section {
+  /* @media (max-width: 480px) {
+     .grid-card-item {
+
+       img {
+         display: none
+       }
+     }
+   }*/
+}
+.grid-species-section .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.grid-species-section .grid-species {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(1, 320px);
+  grid-gap: 10px;
+}
+@media (max-width: 1000px) {
+  .grid-species-section .grid-species {
+    grid-template-columns: repeat(3, 32vw);
+    grid-template-rows: repeat(1, 32vw);
+  }
+}
+@media (max-width: 640px) {
+  .grid-species-section .grid-species {
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(3, 320px);
+  }
+}
+.grid-species-section .grid-card-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-species-section .grid-card-item img {
+  width: 100%;
+  height: 100%;
+}
+.grid-species-section .grid-card-1 label {
+  flex-direction: column;
+  position: relative;
+}
+.grid-species-section .grid-card-1 input {
+  height: 38px;
+  width: 100%;
+}
+.grid-species-section .grid-card-1 input::placeholder {
+  font-style: italic;
+  font-size: 13px;
+}
+.grid-species-section .grid-card-1 button {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  width: 32px;
+  height: 32px;
+  background: #312626;
+  border: none;
+  border-radius: 50%;
+}
+.grid-species-section .grid-card-1 button svg {
+  color: white;
+}
+.grid-species-section .grid-card-2, .grid-species-section .grid-card-3 {
+  position: relative;
+}
+.grid-species-section .grid-card-2 .btn-species, .grid-species-section .grid-card-3 .btn-species {
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  padding: 9px 15px 9px 15px;
+  background: black;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.grid-species-section .grid-card-2 .btn-species span, .grid-species-section .grid-card-3 .btn-species span {
+  margin-left: 10px;
+  font-size: 15px;
+  transition: 0.25s;
+}
+.grid-species-section .grid-card-2 .btn-species:hover span, .grid-species-section .grid-card-3 .btn-species:hover span {
+  color: #006ea5;
+  transition: 0.25s;
+}
+.grid-species-section .grid-card-2 .promo-text, .grid-species-section .grid-card-3 .promo-text {
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+  text-align: center;
 }
 
 body {
