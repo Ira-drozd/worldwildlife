@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+.grid-card-species-section .grid-card-item, .grid-card-species-section .grid-card-content .arrow, .grid-card-species-section .grid-card-content, .grid-card-species-section .text-content, .help-project-section .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -577,6 +583,24 @@ body {
   background-size: cover;
 }
 
+/*.header-worldwildlifespecies {
+  justify-content: center;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 550px;
+    min-height: 450px;
+    background-image: url("images/background/Species-Index-Turtle.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background-size:100%;
+  }
+}*/
 .header-worldwildlifespecies {
   justify-content: center;
 }
@@ -599,15 +623,18 @@ body {
     height: 50vw;
   }
 
-  .header-worldwildlife:before {
+  .header-worldwildlife:before, .header-worldwildlifespecies:before {
     height: 50vw;
   }
 }
 #navbar-container {
-  background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.navbar-container-background {
+  background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
 }
 
 #desktop-navbar {
@@ -626,14 +653,20 @@ body {
 #navbar-container .navbar-collapse {
   justify-content: flex-end;
 }
-#navbar-container a, #navbar-container li {
+#navbar-container a {
+  padding: 10px;
+}
+#navbar-container li {
   padding: 0 10px;
+}
+#navbar-container .mobile-nav-button .nav-button-right, #navbar-container .mobile-nav-button .nav-button-left {
+  padding: 0px;
 }
 #navbar-container .sub-menu, #navbar-container .dark-sub-menu {
   padding: 0 15px;
 }
 #navbar-container .sub-menu a, #navbar-container .dark-sub-menu a {
-  padding: 10px 5px;
+  padding: 5px 5px;
   line-height: 21px;
 }
 
@@ -685,9 +718,12 @@ body {
   color: white;
   font-family: "WfWebfont";
   text-transform: uppercase;
+  letter-spacing: 1px;
+  transition-duration: 0.25s;
 }
 
 .nav-push-right > li {
+  /* @extend %flex-center;*/
   /* &:hover {
      > a {
        background: $dark-gray-menu;
@@ -706,11 +742,14 @@ body {
   text-transform: uppercase;
   font-family: "WfWebfont";
   letter-spacing: 2px;
+  transition-duration: 0.25s;
+  margin-top: 5px;
 }
 
 .sub-menu {
   position: absolute;
-  display: none;
+  display: flex;
+  opacity: 0;
   background: white;
   width: 500px;
 }
@@ -718,6 +757,7 @@ body {
   font-size: 13px;
   font-weight: normal;
   color: rgba(68, 68, 68, 0.9);
+  display: none;
 }
 .sub-menu .left-sub-menu {
   flex: 66.6666666667%;
@@ -752,15 +792,16 @@ body {
 }
 
 .dark-sub-menu {
+  display: flex;
   flex-direction: column;
   position: absolute;
   z-index: 1;
-  width: 190px;
-  padding: 10px 15px;
-  display: none;
+  width: 210px;
+  opacity: 0;
   background: #222;
 }
 .dark-sub-menu a {
+  display: none;
   font-size: 13px;
   font-weight: normal;
   color: #989b97;
@@ -768,10 +809,10 @@ body {
 .dark-sub-menu a:hover span {
   border-bottom: 1px dotted #989b97;
   color: white;
-  transition-duration: 0.4s;
+  transition-duration: 0.25s;
 }
 
-#nav-button a.nav-link, #down-nav-button a.nav-link {
+#nav-button a.nav-link, .down-nav-button a.nav-link {
   border-radius: 2px;
   font-size: 13px;
   font-weight: 800;
@@ -780,19 +821,16 @@ body {
   text-transform: uppercase;
   line-height: 21px;
 }
-#nav-button .nav-button-left > a.nav-link, #down-nav-button .nav-button-left > a.nav-link {
+#nav-button .nav-button-left > a.nav-link, .down-nav-button .nav-button-left > a.nav-link {
   background: #d55c19;
   color: white;
 }
-#nav-button .nav-button-right > a.nav-link, #down-nav-button .nav-button-right > a.nav-link {
+#nav-button .nav-button-right > a.nav-link, .down-nav-button .nav-button-right > a.nav-link {
   background: #e98300;
 }
 
 #nav-button .nav-link {
   padding: 0 15px;
-}
-#nav-button .dark-sub-menu {
-  display: none;
 }
 #nav-button .dark-sub-menu a.nav-item.nav-link {
   background: #222;
@@ -812,35 +850,65 @@ body {
 @media (min-width: 1000px) {
   #nav-button > li:hover > a.nav-link {
     background: #222;
+    transition-duration: 0.25s;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
   #nav-button > li:hover .dark-sub-menu {
     display: flex;
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+  #nav-button > li:hover .dark-sub-menu a {
+    display: block;
   }
 
-  .nav-push-right > li:hover > a {
+  .nav-push-right > li:hover > a, .nav-push-right > li.nav-arctic:hover > a {
     background: #222;
     color: white;
+    transition-duration: 0.25s;
   }
-  .nav-push-right > li:hover .dark-sub-menu {
+  .nav-push-right > li:hover .dark-sub-menu, .nav-push-right > li.nav-arctic:hover .dark-sub-menu {
     display: flex;
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+  .nav-push-right > li:hover .dark-sub-menu a, .nav-push-right > li.nav-arctic:hover .dark-sub-menu a {
+    display: block;
   }
 
-  .nav-push-left > li:hover > a {
+  .nav-push-left > li:hover > a, .nav-push-left > li.nav-arctic:hover > a {
     background: white;
     color: #0493da;
+    transition-duration: 0.25s;
   }
-  .nav-push-left > li:hover .sub-menu {
+  .nav-push-left > li:hover .sub-menu, .nav-push-left > li.nav-arctic:hover .sub-menu {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+  .nav-push-left > li:hover .sub-menu a, .nav-push-left > li.nav-arctic:hover .sub-menu a {
     display: flex;
   }
 }
 .mobile-menu {
+  height: 0px;
+  opacity: 0;
+  transition: height 0.25s, opacity 0.3s linear 0.2s;
+}
+.mobile-menu .navbar-nav, .mobile-menu #mobile-search-form {
   display: none;
 }
 
 .open-menu {
-  display: block;
+  height: 300px;
+  opacity: 1;
+  transition: height 0.25s, opacity 0.3s linear 0.2s;
   /*position: absolute;
   z-index: 1;*/
+}
+.open-menu .navbar-nav, .open-menu #mobile-search-form {
+  display: flex;
 }
 
 .mobile-nav-button {
@@ -926,14 +994,13 @@ body {
   .mobile-nav-button {
     display: block;
   }
-  .mobile-nav-button #down-nav-button {
+  .mobile-nav-button .down-nav-button {
     flex-direction: row;
   }
-  .mobile-nav-button #down-nav-button .nav-button-right, .mobile-nav-button #down-nav-button .nav-button-left {
-    padding: 0;
+  .mobile-nav-button .down-nav-button .nav-button-right, .mobile-nav-button .down-nav-button .nav-button-left {
     flex: 50%;
   }
-  .mobile-nav-button #down-nav-button a.nav-link {
+  .mobile-nav-button .down-nav-button a.nav-link {
     border-radius: 0;
     height: 55px;
     display: flex;
@@ -941,7 +1008,7 @@ body {
     align-items: center;
     line-height: 21px;
   }
-  .mobile-nav-button #down-nav-button a.nav-link:hover span {
+  .mobile-nav-button .down-nav-button a.nav-link:hover span {
     margin: 0;
     padding: 0;
     border-bottom: 1px solid white;
@@ -999,18 +1066,45 @@ body {
 }
 .header-content .hdr h2 {
   font-size: 52px;
-  padding-bottom: 10px;
   font-weight: bold;
+  color: white;
+  padding-bottom: 10px;
   text-transform: uppercase;
+}
+.header-content .hdr h1 {
+  font-size: 52px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  margin-top: 200px;
 }
 .header-content .hdr-sub h3 {
   font-size: 18px;
   padding-bottom: 2px;
 }
+.header-content .hdr-sub p {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
 
 @media (max-width: 640px) {
-  .header-content .hdr h2 {
+  .header-content .hdr h2, .header-content .hdr h1 {
     font-size: 32px;
+  }
+}
+@media (max-width: 815px) {
+  .header-content .hdr h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .header-content .hdr h1, .header-content .hdr-sub p {
+    display: none;
   }
 }
 .dark-footer {
@@ -1159,11 +1253,13 @@ body {
 .circle-card-homepage .intro p {
   font-size: 15px;
   margin: 0;
+  padding-bottom: 10px;
 }
 .circle-card-homepage .intro .highlight {
   margin-bottom: 1.5em;
   font-size: 24px;
   line-height: 1.3;
+  padding: 0px;
 }
 .circle-card-homepage .circle-card-pillars .circle-card-item img {
   border-radius: 50%;
@@ -1192,26 +1288,100 @@ body {
   color: #006983;
 }
 
+.grid-card-section {
+  margin: 50px 0;
+}
+.grid-card-section a {
+  text-decoration: none;
+}
 .grid-card-section .container {
   display: flex;
   justify-content: center;
 }
 .grid-card-section .grid-card-item {
-  background: #0c5460;
+  background: black;
   border-radius: 10px;
   height: 100%;
   display: flex;
   align-items: flex-end;
 }
 .grid-card-section .grid-card-item .grid-card-content {
-  background: #1c7430;
+  background: black;
   width: 100%;
   border-radius: 0 0 10px 10px;
   padding: 30px;
+  transition: padding 0.25s;
+}
+@media (max-width: 600px) {
+  .grid-card-section .grid-card-item .grid-card-content {
+    padding: 20px;
+  }
+}
+@media (max-width: 455px) {
+  .grid-card-section .grid-card-item .grid-card-content {
+    padding: 15px;
+  }
+}
+.grid-card-section .grid-card-item p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+.grid-card-section .grid-card-item h3 {
+  font-size: 36px;
+  font-weight: normal;
+  color: white;
+  font-family: "WfWebfont";
+  line-height: 1;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px;
+}
+.grid-card-section .grid-card-item span {
+  font-size: 13px;
+  font-weight: bold;
+  color: #989b97;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+@media (max-width: 1200px) {
+  .grid-card-section .grid-card-item h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 910px) {
+  .grid-card-section .grid-card-item h3 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .grid-card-section .grid-card-item h3 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 455px) {
+  .grid-card-section .grid-card-item h3 {
+    font-size: 18px;
+  }
+  .grid-card-section .grid-card-item p {
+    font-size: 15px;
+  }
+}
+.grid-card-section a:hover .grid-card-content {
+  padding-bottom: 50px;
+  transition: padding-bottom 0.25s;
+}
+.grid-card-section a:hover .grid-card-item {
+  background-size: 110%;
+  transition: background-size 0.25s;
+}
+.grid-card-section a:hover .grid-card-21, .grid-card-section a:hover .grid-card-32 {
+  transform: scale(0.97);
+  transition: transform 0.25s;
 }
 
 .grid-card-homepage {
-  margin: 50px 0;
   display: grid;
   grid-template-columns: 590px 590px;
   grid-template-rows: 480px 480px 480px;
@@ -1234,63 +1404,136 @@ body {
   background-image: url("images/griscardW/shutterstock_1152324746.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
+}
+.grid-card-homepage .grid-card-21 {
+  transition: transform 0.25s;
+  background: #d55c19;
+}
+.grid-card-homepage .grid-card-21 .grid-card-content {
+  background: #d55c19;
+}
+.grid-card-homepage .grid-card-21 p {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+}
+@media (max-width: 600px) {
+  .grid-card-homepage .grid-card-21 p {
+    font-size: 14px;
+  }
+}
+.grid-card-homepage .grid-card-21 span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  padding: 0.8em 1em;
+  border-radius: 3px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background 1s;
+  background-size: 100%;
+  background-image: linear-gradient(black, black);
+  position: relative;
+  z-index: 100;
+}
+.grid-card-homepage .grid-card-21 span:before {
+  background-image: linear-gradient(#444343, black);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  transition: opacity 0.1s;
+}
+.grid-card-homepage .grid-card-21 span:hover:before {
+  opacity: 1;
 }
 .grid-card-homepage .grid-card-22 {
   background-image: url("images/griscardW/DRTV_homepage_polarbear.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
 }
 .grid-card-homepage .grid-card-31 {
   background-image: url("images/griscardW/smaller_shutterstock_112976938.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
+}
+.grid-card-homepage .grid-card-32 {
+  transition: transform 0.25s;
 }
 .grid-card-homepage .grid-card-4 {
   background-image: url("images/griscardW/2020-01-ogc-valentine.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
 }
 .grid-card-homepage .grid-card-5 {
   background-image: url("images/griscardW/Medium_WW2124502.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
+}
+.grid-card-homepage .grid-card-5 .grid-card-content {
+  background: none;
 }
 .grid-card-homepage .grid-card-61 {
   background-image: url("images/griscardW/Medium_WW1106019.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
 }
 .grid-card-homepage .grid-card-62 {
   background-image: url("images/griscardW/Medium_WW2120967.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
+}
+.grid-card-homepage .grid-card-62 .grid-card-content {
+  background: none;
 }
 
 .grid-help-card-homepage {
-  margin: 50px 0;
   display: grid;
   grid-template-columns: 590px 590px;
   grid-template-rows: 480px;
   grid-gap: 10px;
 }
+.grid-help-card-homepage a {
+  text-decoration: none;
+}
 .grid-help-card-homepage .grid-card-7 {
   background-image: url("images/griscardW/2018-11-20-pandanation-celebrate.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
 }
 .grid-help-card-homepage .grid-card-8 {
   background-image: url("images/griscardW/Small_WW164079_(1).jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 0.25s;
+}
+.grid-help-card-homepage .grid-card-8 .grid-card-content {
+  background: none;
 }
 
 @media (max-width: 1200px) {
@@ -1353,6 +1596,505 @@ body {
     grid-template-rows: 252px 252px;
   }
 }
+.nav-push-left > li.nav-arctic > a {
+  color: black;
+}
+
+.nav-push-right > li.nav-arctic > a {
+  color: black;
+}
+
+.help-project-section {
+  background-image: url("images/background/WWF_Catalog_2020_LG_Cover__GRAY50.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.help-project-section .help-project {
+  padding: 30px;
+  text-align: center;
+}
+.help-project-section .help-project h2 {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #d55c19;
+  text-transform: uppercase;
+  margin-bottom: 1%;
+}
+.help-project-section .help-project p {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  padding-top: 15px;
+}
+.help-project-section .down-header-content {
+  display: none;
+  padding-top: 20px;
+}
+.help-project-section .down-header-content .hdr h1 {
+  margin: 0 0 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #444;
+  text-transform: uppercase;
+}
+.help-project-section .down-header-content p {
+  font-size: 17px;
+  font-weight: normal;
+  color: #444;
+}
+
+@media (max-width: 640px) {
+  .help-project-section {
+    background-image: none;
+  }
+  .help-project-section .down-header-content {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .help-project-section .help-project h2 {
+    background-color: black;
+    font-size: 15px;
+  }
+  .help-project-section .help-project p {
+    font-weight: normal;
+  }
+}
+/* GRID-SRCTION  */
+.grid-card-species-section {
+  /*  @media handheld and (max-width:1000px){
+      .grid-card-item {
+
+        &:before {
+          content: " 456";
+          position: absolute;
+          //display: block;
+          width: 100%;
+          height: 100%;
+          background: url("images/background/bg-overlay-pattern-909bb457df087b9ceb234d2afef206a1ae0c34a6f1db73267c87c7666f52037a.png");
+          opacity: 1;
+          z-index: 1000;
+
+        }
+
+
+      }
+    }*/
+  /* $green-color: green;
+   $test: 2125036;*/
+  /*.grid-card-1 {
+    background-color: yellow;
+  }*/
+}
+.grid-card-species-section a {
+  text-decoration: none;
+}
+.grid-card-species-section .container > .row {
+  display: flex;
+  justify-content: center;
+}
+.grid-card-species-section .text-content {
+  margin-top: 40px;
+}
+.grid-card-species-section .text-content p {
+  padding-left: 2%;
+  padding-bottom: 6%;
+  padding-right: 2%;
+  font-size: 15px;
+  font-weight: normal;
+  color: #444;
+  line-height: 24px;
+}
+.grid-card-species-section .grid-card-species {
+  margin-bottom: 40px;
+  padding-bottom: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(8, 40vw);
+}
+@media (min-width: 640px) {
+  .grid-card-species-section .grid-card-species {
+    grid-template-columns: repeat(3, 35vw);
+    grid-template-rows: repeat(5, 25vw);
+  }
+}
+@media (min-width: 1000px) {
+  .grid-card-species-section .grid-card-species {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(6, 250px);
+  }
+  .grid-card-species-section a:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .grid-card-species-section a:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .grid-card-species-section a:nth-child(3) {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  .grid-card-species-section a:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .grid-card-species-section a:nth-child(6) {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  .grid-card-species-section a:nth-child(9) {
+    grid-column: 3/5;
+    grid-row: 4/5;
+  }
+  .grid-card-species-section a:nth-child(11) {
+    grid-column: 2/4;
+    grid-row: 5/6;
+  }
+  .grid-card-species-section a:nth-child(14) {
+    grid-column: 2/4;
+    grid-row: 6/7;
+  }
+}
+.grid-card-species-section .grid-card-content {
+  width: 100%;
+  opacity: 0;
+  transition: 0.25s;
+  flex-direction: column;
+}
+.grid-card-species-section .grid-card-content p {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  font-family: WfWebfont;
+  line-height: 1;
+  text-shadow: 2px 2px 0 #312626;
+}
+.grid-card-species-section .grid-card-content .arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d55c19;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+.grid-card-species-section .grid-card-item {
+  height: 100%;
+  position: relative;
+}
+.grid-card-species-section .grid-card-item:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("images/background/bg-overlay-pattern-909bb457df087b9ceb234d2afef206a1ae0c34a6f1db73267c87c7666f52037a.png");
+  opacity: 0;
+  transition: 0.25s;
+}
+.grid-card-species-section .grid-card-item:hover:after {
+  opacity: 1;
+  transition: 0.25s;
+}
+.grid-card-species-section .grid-card-item:hover .grid-card-content {
+  opacity: 1;
+  transition: 0.25s;
+  z-index: 1;
+}
+.grid-card-species-section .grid-card-1 {
+  background-image: url("images/gridcardspecies/grid-card-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-2 {
+  background-image: url("images/gridcardspecies/grid-card-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-3 {
+  background-image: url("images/gridcardspecies/grid-card-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-4 {
+  background-image: url("images/gridcardspecies/grid-card-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-5 {
+  background-image: url("images/gridcardspecies/grid-card-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-6 {
+  background-image: url("images/gridcardspecies/grid-card-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-7 {
+  background-image: url("images/gridcardspecies/grid-card-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-8 {
+  background-image: url("images/gridcardspecies/grid-card-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-9 {
+  background-image: url("images/gridcardspecies/grid-card-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-10 {
+  background-image: url("images/gridcardspecies/grid-card-10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-11 {
+  background-image: url("images/gridcardspecies/grid-card-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-12 {
+  background-image: url("images/gridcardspecies/grid-card-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-13 {
+  background-image: url("images/gridcardspecies/grid-card-13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-14 {
+  background-image: url("images/gridcardspecies/grid-card-14.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.grid-card-species-section .grid-card-15 {
+  background-image: url("images/gridcardspecies/grid-card-15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*CARDS*/
+.circle-card-section .circle-card-marineanimals, .circle-card-section .circle-card-primates, .circle-card-section .circle-card-bigcats {
+  color: #444;
+  text-align: center;
+  padding: 40px 0;
+  overflow: hidden;
+  position: relative;
+  padding: 0 50px;
+}
+.circle-card-section .circle-card-marineanimals .card-title, .circle-card-section .circle-card-primates .card-title, .circle-card-section .circle-card-bigcats .card-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 35px;
+}
+.circle-card-section .circle-card-marineanimals .card-title:after, .circle-card-section .circle-card-marineanimals .card-title:before, .circle-card-section .circle-card-primates .card-title:after, .circle-card-section .circle-card-primates .card-title:before, .circle-card-section .circle-card-bigcats .card-title:after, .circle-card-section .circle-card-bigcats .card-title:before {
+  background: rgba(80, 55, 55, 0.15);
+  content: "";
+  display: block;
+  height: 6px;
+  margin: 0 auto;
+  width: 80px;
+}
+.circle-card-section .circle-card-marineanimals .circle-card-pillars, .circle-card-section .circle-card-primates .circle-card-pillars, .circle-card-section .circle-card-bigcats .circle-card-pillars {
+  display: flex;
+  justify-content: flex-start;
+  /*  margin-left: -200px;*/
+  transition: margin-left 1s, margin-right 1s;
+}
+.circle-card-section .circle-card-marineanimals .circle-card-pillars .circle-card-item, .circle-card-section .circle-card-primates .circle-card-pillars .circle-card-item, .circle-card-section .circle-card-bigcats .circle-card-pillars .circle-card-item {
+  margin: 10px;
+}
+.circle-card-section .circle-card-marineanimals .circle-card-pillars .circle-card-item a, .circle-card-section .circle-card-primates .circle-card-pillars .circle-card-item a, .circle-card-section .circle-card-bigcats .circle-card-pillars .circle-card-item a {
+  font-size: 13px;
+  font-weight: bold;
+  color: #006ea5;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.circle-card-section .circle-card-marineanimals .arrow, .circle-card-section .circle-card-primates .arrow, .circle-card-section .circle-card-bigcats .arrow {
+  position: absolute;
+  border: none;
+  width: 50px;
+  height: 229px;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 45px;
+  font-weight: bold;
+  color: #006ea5;
+}
+.circle-card-section .circle-card-marineanimals .arrow:focus, .circle-card-section .circle-card-primates .arrow:focus, .circle-card-section .circle-card-bigcats .arrow:focus {
+  outline: none;
+}
+.circle-card-section .circle-card-marineanimals .prev, .circle-card-section .circle-card-primates .prev, .circle-card-section .circle-card-bigcats .prev {
+  left: 0px;
+  box-shadow: 6px 0 5px -5px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.5));
+}
+.circle-card-section .circle-card-marineanimals .prev span, .circle-card-section .circle-card-primates .prev span, .circle-card-section .circle-card-bigcats .prev span {
+  transition: 0.25s;
+}
+.circle-card-section .circle-card-marineanimals .prev:hover span, .circle-card-section .circle-card-primates .prev:hover span, .circle-card-section .circle-card-bigcats .prev:hover span {
+  margin-right: 20px;
+  color: #0493da;
+  transition: 0.25s;
+}
+.circle-card-section .circle-card-marineanimals .next, .circle-card-section .circle-card-primates .next, .circle-card-section .circle-card-bigcats .next {
+  right: 0px;
+  box-shadow: -6px 0 5px -5px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), white);
+}
+.circle-card-section .circle-card-marineanimals .next span, .circle-card-section .circle-card-primates .next span, .circle-card-section .circle-card-bigcats .next span {
+  transition: 0.25s;
+}
+.circle-card-section .circle-card-marineanimals .next:hover span, .circle-card-section .circle-card-primates .next:hover span, .circle-card-section .circle-card-bigcats .next:hover span {
+  margin-left: 20px;
+  color: #0493da;
+  transition: 0.25s;
+}
+.circle-card-section .circle-card-marineanimals .card-item-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-5 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-6 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-7 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-8 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-9 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-10 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-11 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-12 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-card-section .circle-card-marineanimals .card-item-13 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("images/circlecardmarineanimals/card-item-13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }

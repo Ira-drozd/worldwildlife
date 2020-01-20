@@ -1,0 +1,408 @@
+.nav-push-left > li.nav-arctic {
+  > a {
+    color: black;
+  }
+}
+
+.nav-push-right > li.nav-arctic {
+
+  // @extend %flex-center;
+  > a {
+    color: black;
+  }
+}
+
+.help-project-section {
+  background-image: url("images/background/WWF_Catalog_2020_LG_Cover__GRAY50.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+
+  .row {
+    @extend %flex-center;
+  }
+
+  .help-project {
+    padding: 30px;
+    text-align: center;
+
+    h2 {
+      display: inline-block;
+      padding: 0.5em;
+      @include fonts(18px, bold, white);
+      background-color: $dark-orange;
+      text-transform: uppercase;
+      margin-bottom: 1%;
+    }
+
+    p {
+      @include fonts(15px, bold, black);
+      margin: 0;
+      padding-top: 15px;
+    }
+  }
+
+  .down-header-content {
+    display: none;
+    padding-top: 20px;
+
+    .hdr h1 {
+      margin: 0 0 15px;
+      @include fonts(32px, bold, $main-text-color);
+      text-transform: uppercase;
+    }
+
+    p {
+      @include fonts(17px, normal, $main-text-color);
+
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .help-project-section {
+    background-image: none;
+
+    .down-header-content {
+      display: block;
+    }
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .help-project-section {
+    .help-project {
+      h2 {
+        background-color: black;
+        font-size: 15px;
+      }
+
+      p {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+/* GRID-SRCTION  */
+
+.grid-card-species-section {
+
+  a {
+    text-decoration: none;
+  }
+
+  .container > .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-content {
+    margin-top: 40px;
+    @extend %flex-center;
+
+    p {
+      padding-left: 2%;
+      padding-bottom: 6%;
+      padding-right: 2%;
+      @include fonts(15px, normal, $main-text-color);
+      line-height: 24px;
+    }
+  }
+
+  .grid-card-species {
+    //background-color: #e50050;
+    margin-bottom: 40px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(8, 40vw);
+
+  }
+
+  @media (min-width: 640px) {
+
+    .grid-card-species {
+      grid-template-columns: repeat(3, 35vw);
+      grid-template-rows: repeat(5, 25vw);
+    }
+
+  }
+
+  @media (min-width: 1000px) {
+
+    .grid-card-species {
+      grid-template-columns: repeat(4, 250px);
+      grid-template-rows: repeat(6, 250px);
+
+    }
+
+    a:nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1/3;
+
+    }
+
+    a:nth-child(2) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    a:nth-child(3) {
+      grid-column: 3/5;
+      grid-row: 1/3;
+    }
+
+    a:nth-child(4) {
+      grid-column: 2/3;
+      grid-row: 2/4;
+    }
+
+    a:nth-child(6) {
+      grid-column: 3/5;
+      grid-row: 3/4;
+    }
+
+    a:nth-child(9) {
+      grid-column: 3/5;
+      grid-row: 4/5;
+    }
+
+    a:nth-child(11) {
+      grid-column: 2/4;
+      grid-row: 5/6;
+    }
+
+    a:nth-child(14) {
+      grid-column: 2/4;
+      grid-row: 6/7;
+    }
+  }
+
+  .grid-card-content {
+    width: 100%;
+    @extend %flex-center;
+    opacity: 0;
+    transition: 0.25s;
+    flex-direction: column;
+
+    p {
+      text-transform: uppercase;
+      @include fonts(32px, 400, white);
+      font-family: WfWebfont;
+      line-height: 1;
+      text-shadow: 2px 2px 0 #312626;
+    }
+
+    .arrow {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $dark-orange;
+      @include fonts(28px, bold, white);
+      @extend %flex-center;
+    }
+  }
+
+
+  .grid-card-item {
+    height: 100%;
+    @extend %flex-center;
+
+    //transition: 1s;
+    position: relative;
+
+
+    &:after {
+      content: " ";
+      position: absolute;
+      //display: block;
+      width: 100%;
+      height: 100%;
+      background: url("images/background/bg-overlay-pattern-909bb457df087b9ceb234d2afef206a1ae0c34a6f1db73267c87c7666f52037a.png");
+      opacity: 0;
+      transition: 0.25s;
+
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1;
+        transition: 0.25s;
+      }
+
+      .grid-card-content {
+        opacity: 1;
+        transition: 0.25s;
+        z-index: 1;
+      }
+
+    }
+
+  }
+
+  /*  @media handheld and (max-width:1000px){
+      .grid-card-item {
+
+        &:before {
+          content: " 456";
+          position: absolute;
+          //display: block;
+          width: 100%;
+          height: 100%;
+          background: url("images/background/bg-overlay-pattern-909bb457df087b9ceb234d2afef206a1ae0c34a6f1db73267c87c7666f52037a.png");
+          opacity: 1;
+          z-index: 1000;
+
+        }
+
+
+      }
+    }*/
+
+
+  /* $green-color: green;
+   $test: 2125036;*/
+
+  @for $i from 1 through 15 {
+    .#{$class-name}-#{$i} {
+      background-image: url("images/gridcardspecies/#{$class-name}-#{$i}.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  /*.grid-card-1 {
+    background-color: yellow;
+  }*/
+
+
+}
+
+/*CARDS*/
+
+.circle-card-section {
+
+  .circle-card-marineanimals, .circle-card-primates, .circle-card-bigcats {
+
+    color: $main-text-color;
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px;
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin: 35px;
+
+      &:after, &:before {
+        background: rgba(80, 55, 55, 0.15);
+        content: "";
+        display: block;
+        height: 6px;
+        margin: 0 auto;
+        width: 80px;
+      }
+    }
+
+    .circle-card-pillars {
+      display: flex;
+      justify-content: flex-start;
+
+      //justify-content: space-between;
+      //  flex-wrap: wrap;
+      /*  margin-left: -200px;*/
+      transition: margin-left 1s, margin-right 1s;
+
+      .circle-card-item {
+
+        margin: 10px;
+
+        a {
+          @include fonts(13px, bold, $blue-links);
+          text-transform: uppercase;
+          padding: 10px 0;
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      border: none;
+      width: 50px;
+      height: 229px;
+      background: rgb(255, 255, 255, 0.3);
+      @include fonts(45px, bold, $blue-links);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .prev {
+      left: 0px;
+      box-shadow: 6px 0 5px -5px rgba(0, 0, 0, 0.35);
+      background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.5));
+     span{
+       transition: 0.25s;
+     }
+    &:hover{
+      span{
+        margin-right: 20px;
+        color: $blue-menu;
+        transition: 0.25s;
+      }
+    }
+    }
+
+    .next {
+      right: 0px;
+      box-shadow: -6px 0 5px -5px rgba(0, 0, 0, 0.35);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgb(255, 255, 255));
+      span{
+        transition: 0.25s;
+      }
+      &:hover{
+        span{
+          margin-left: 20px;
+          color: $blue-menu;
+          transition: 0.25s;
+        }
+      }
+    }
+
+  }
+
+
+  .circle-card-marineanimals {
+
+    $class-name-marineanimals: "card-item";
+
+    @for $i from 1 through 13 {
+      .#{$class-name-marineanimals}-#{$i} {
+
+        // background: #6f42c1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url("images/circlecardmarineanimals/#{$class-name-marineanimals}-#{$i}.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+
+  }
+
+}
+
+
+

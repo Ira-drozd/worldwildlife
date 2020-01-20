@@ -24,7 +24,9 @@
 @import 'components/button';
 
 // 6. Page-specific styles
-@import 'pages/home', 'pages/worldwildlife';
+@import 'pages/home',
+'pages/worldwildlife',
+'pages/worldwildlifearctic';
 
 // 7. Themes
 @import 'themes/default';

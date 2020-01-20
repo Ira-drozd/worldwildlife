@@ -30,12 +30,14 @@
     p {
       font-size: 15px;
       margin: 0;
+      padding-bottom: 10px;
     }
 
     .highlight {
       margin-bottom: 1.5em;
       font-size: 24px;
       line-height: 1.3;
+      padding: 0px;
     }
   }
 
@@ -97,31 +99,137 @@
 }
 
 .grid-card-section {
+  margin: 50px 0;
+
+  a {
+    text-decoration: none;
+  }
+
   .container {
     display: flex;
     justify-content: center;
   }
 
   .grid-card-item {
-    background: #0c5460;
+
+    background: black;
     border-radius: 10px;
     height: 100%;
     display: flex;
     align-items: flex-end;
 
     .grid-card-content {
-      background: #1c7430;
+      background: black;
       width: 100%;
       border-radius: 0 0 10px 10px;
       padding: 30px;
+      transition: padding 0.25s;
+    }
+
+    @media (max-width: 600px) {
+      .grid-card-content {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 455px) {
+      .grid-card-content {
+        padding: 15px;
+      }
+    }
+
+    p {
+      @include fonts(18px, bold, white);
+      margin: 0;
+    }
+
+    h3 {
+      @include fonts(36px, normal, white);
+      font-family: 'WfWebfont';
+      line-height: 1;
+      letter-spacing: 1.5px;
+      margin: 0 0 10px;
+    }
+
+    span {
+      @include fonts(13px, bold, #989b97);
+      text-transform: uppercase;
+      margin: 0 0 5px;
     }
   }
 }
 
+@media (max-width: 1200px) {
+  .grid-card-section {
+    .grid-card-item {
+      h3 {
+        font-size: 27px;
+      }
+    }
+  }
+}
 
+@media (max-width: 910px) {
+  .grid-card-section {
+    .grid-card-item {
+      h3 {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-card-section {
+    .grid-card-item {
+      h3 {
+        font-size: 27px;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 455px) {
+  .grid-card-section {
+    .grid-card-item {
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+    }
+  }
+}
+
+.grid-card-section {
+  a {
+    &:hover {
+      .grid-card-content {
+        padding-bottom: 50px;
+        transition: padding-bottom 0.25s;
+      }
+
+      .grid-card-item {
+        background-size: 110%;
+        transition: background-size 0.25s;
+      }
+
+      .grid-card-21, .grid-card-32 {
+        transform: scale(0.97);
+        transition: transform 0.25s;
+
+      }
+    }
+  }
+}
 
 .grid-card-homepage {
-  margin: 50px 0;
+  // margin: 50px 0;
   display: grid;
   grid-template-columns: 590px 590px;
   grid-template-rows: 480px 480px 480px;
@@ -136,7 +244,6 @@
   }
 
 
-
   .grid-card-item.grid-card-21, .grid-card-item.grid-card-32 {
     display: flex;
     align-items: flex-start;
@@ -148,7 +255,46 @@
 
   .grid-card-1 {
     @include background-grid-card(url("images/griscardW/shutterstock_1152324746.jpg"), no-repeat, center center);
+
   }
+
+  .grid-card-21 {
+
+    transition: transform 0.25s;
+    background: $dark-orange;
+
+    .grid-card-content {
+      background: $dark-orange;
+    }
+
+    p {
+      @include fonts(16px, normal, white);
+
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 14px;
+      }
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      @include fonts(13px, bold, white);
+      margin-top: 20px;
+      padding: 0.8em 1em;
+      border-radius: 3px;
+      // background: black;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+      transition: background 1s;
+      @include gradientAnimation(black, black, #444343, 0.1s);
+    }
+
+
+  }
+
 
   .grid-card-22 {
     @include background-grid-card(url("images/griscardW/DRTV_homepage_polarbear.jpg"), no-repeat, center center);
@@ -157,23 +303,43 @@
   .grid-card-31 {
     @include background-grid-card(url("images/griscardW/smaller_shutterstock_112976938.jpg"), no-repeat, center center);
   }
+
+  .grid-card-32 {
+    transition: transform 0.25s;
+  }
+
   .grid-card-4 {
     @include background-grid-card(url("images/griscardW/2020-01-ogc-valentine.jpg"), no-repeat, center center);
   }
+
   .grid-card-5 {
     @include background-grid-card(url("images/griscardW/Medium_WW2124502.jpg"), no-repeat, center center);
+
+    .grid-card-content {
+      background: none;
+    }
   }
+
   .grid-card-61 {
     @include background-grid-card(url("images/griscardW/Medium_WW1106019.jpg"), no-repeat, center center);
   }
+
   .grid-card-62 {
     @include background-grid-card(url("images/griscardW/Medium_WW2120967.jpg"), no-repeat, center center);
+
+    .grid-card-content {
+      background: none;
+    }
   }
 
 }
 
-.grid-help-card-homepage{
-  margin: 50px 0;
+.grid-help-card-homepage {
+  a {
+    text-decoration: none;
+  }
+
+  // margin: 50px 0;
   display: grid;
   grid-template-columns: 590px 590px;
   grid-template-rows: 480px;
@@ -186,6 +352,10 @@
 
   .grid-card-8 {
     @include background-grid-card(url("images/griscardW/Small_WW164079_(1).jpg"), no-repeat, center center);
+
+    .grid-card-content {
+      background: none;
+    }
   }
 }
 
@@ -200,8 +370,8 @@
     }
   }
 
-  .grid-help-card-homepage{
-    grid-template-columns:  446px 446px;
+  .grid-help-card-homepage {
+    grid-template-columns: 446px 446px;
     grid-template-rows: 360px;
   }
 
@@ -217,8 +387,8 @@
       grid-template-rows: 480px;
     }
   }
-  .grid-help-card-homepage{
-    grid-template-columns:  590px;
+  .grid-help-card-homepage {
+    grid-template-columns: 590px;
     grid-template-rows: 480px 480px;
   }
 }
@@ -233,8 +403,8 @@
       grid-template-rows: 360px;
     }
   }
-  .grid-help-card-homepage{
-    grid-template-columns:  446px;
+  .grid-help-card-homepage {
+    grid-template-columns: 446px;
     grid-template-rows: 360px 360px;
   }
 }
@@ -249,8 +419,8 @@
       grid-template-rows: 248px;
     }
   }
-  .grid-help-card-homepage{
-    grid-template-columns:  310px;
+  .grid-help-card-homepage {
+    grid-template-columns: 310px;
     grid-template-rows: 252px 252px;
   }
 }

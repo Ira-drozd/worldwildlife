@@ -31,6 +31,25 @@
 
 }
 
+/*.header-worldwildlifespecies {
+  justify-content: center;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 550px;
+    min-height: 450px;
+    background-image: url("images/background/Species-Index-Turtle.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background-size:100%;
+  }
+}*/
+
 .header-worldwildlifespecies {
   justify-content: center;
 
@@ -55,7 +74,7 @@
     height: 50vw;
   }
 
-  .header-worldwildlife {
+  .header-worldwildlife, .header-worldwildlifespecies {
 
     &:before {
       height: 50vw;
@@ -65,11 +84,17 @@
 }
 
 #navbar-container {
-  background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
+  // background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
   position: absolute;
   top: 0;
   width: 100%;
 }
+
+.navbar-container-background {
+  background: url("images/background/bg-header-pattern-2d1f5ee4abb035203b0bd1cb7326ea039863ae7c3190ee41e43f4d8d9fcbf953.png") repeat;
+
+}
+
 
 #desktop-navbar {
   padding: 20px 10px 12px;
@@ -91,13 +116,24 @@
     justify-content: flex-end;
   }
 
-  a, li {
+  a {
+    padding: 10px;
+  }
+
+  li {
     padding: 0 10px;
   }
 
+  .mobile-nav-button {
+    .nav-button-right, .nav-button-left {
+      padding: 0px;
+    }
+  }
+
+
   .sub-menu, .dark-sub-menu, {
     a {
-      padding: 10px 5px;
+      padding: 5px 5px;
       line-height: 21px;
 
     }
@@ -149,11 +185,13 @@
 }
 
 .nav-push-left > li {
-
   > a {
     @include fonts(24px, normal, white);
     font-family: 'WfWebfont';
     text-transform: uppercase;
+    letter-spacing: 1px;
+    transition-duration: 0.25s;
+
   }
 
   /*  &:hover {
@@ -170,14 +208,17 @@
 
 .nav-push-right > li {
 
-  // @extend %flex-center;
-
+  /* @extend %flex-center;*/
   > a {
     @include fonts(17px, bold, $light-grey-menu);
     text-transform: uppercase;
     font-family: 'WfWebfont';
     letter-spacing: 2px;
+    transition-duration: 0.25s;
+    margin-top: 5px;
   }
+
+
 
   /* &:hover {
      > a {
@@ -193,12 +234,15 @@
 
 .sub-menu {
   position: absolute;
-  display: none;
+  display: flex;
+  opacity: 0;
   background: white;
   width: 500px;
 
+
   a {
     @include fonts(13px, normal, $gray-links);
+    display: none;
   }
 
   .left-sub-menu {
@@ -245,27 +289,33 @@
 }
 
 .dark-sub-menu {
-  //display: flex;
+  display: flex;
   flex-direction: column;
   position: absolute;
   z-index: 1;
-  width: 190px;
-  padding: 10px 15px;
-  display: none;
+  width: 210px;
+ // top: 40px;
+  //left: 0;
+  // display: none;
+  //height: 0px;
+  opacity: 0;
+
+
   background: $dark-gray-menu;
 
   a {
+    display: none;
     @include fonts(13px, normal, $light-grey-menu);
 
     &:hover span {
       border-bottom: 1px dotted $light-grey-menu;
       color: white;
-      transition-duration: 0.4s;
+      transition-duration: 0.25s;
     }
   }
 }
 
-#nav-button, #down-nav-button {
+#nav-button, .down-nav-button {
 
   a.nav-link {
     border-radius: 2px;
@@ -295,7 +345,7 @@
   }
 
   .dark-sub-menu {
-    display: none;
+    // display: none;
 
 
     a.nav-item.nav-link {
@@ -303,6 +353,7 @@
       @include fonts(13px, normal, $light-grey-menu);
       text-transform: none;
       padding: 5px 0;
+
     }
 
   }
@@ -312,6 +363,7 @@
 
     .dark-sub-menu {
       right: 10px;
+
     }
   }
 }
@@ -323,39 +375,63 @@
     &:hover {
       > a.nav-link {
         background: $dark-gray-menu;
+        transition-duration: 0.25s;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
       }
 
       .dark-sub-menu {
         display: flex;
+
+        opacity: 1;
+        transition: opacity 0.25s;
+
+        a {
+          display: block;
+        }
       }
 
     }
   }
 
-  .nav-push-right > li {
+  .nav-push-right > li, .nav-push-right > li.nav-arctic {
 
     &:hover {
       > a {
         background: $dark-gray-menu;
         color: white;
+        transition-duration: 0.25s;
       }
 
       .dark-sub-menu {
         display: flex;
+        opacity: 1;
+        transition: opacity 0.25s;
+
+        a {
+          display: block;
+        }
       }
     }
   }
 
-  .nav-push-left > li {
+  .nav-push-left > li, .nav-push-left > li.nav-arctic {
 
     &:hover {
       > a {
         background: white;
         color: $blue-menu;
+        transition-duration: 0.25s;
       }
 
       .sub-menu {
         display: flex;
+        opacity: 1;
+        transition: opacity 0.25s;
+
+        a {
+          display: flex;
+        }
       }
     }
   }
@@ -363,13 +439,31 @@
 }
 
 .mobile-menu {
-  display: none;
+  //display: none;
+  height: 0px;
+  opacity: 0;
+  transition: height 0.25s, opacity 0.3s linear 0.20s;
+
+
+  .navbar-nav, #mobile-search-form {
+    display: none;
+
+  }
+
 }
 
 .open-menu {
-  display: block;
+  height: 300px;
+  opacity: 1;
+  transition: height 0.25s, opacity 0.3s linear 0.20s;
+  //display: block;
   /*position: absolute;
   z-index: 1;*/
+  .navbar-nav, #mobile-search-form {
+    display: flex;
+
+  }
+
 }
 
 .mobile-nav-button {
@@ -478,16 +572,16 @@
 
     display: block;
 
-    #down-nav-button {
+    .down-nav-button {
 
       // display: flex;
       flex-direction: row;
 
       .nav-button-right, .nav-button-left {
-        padding: 0;
+        //  padding: 0px;
         flex: 50%;
-
       }
+
 
       a.nav-link {
         border-radius: 0;
@@ -578,10 +672,18 @@
 
 
   .hdr h2 {
-    font-size: 52px;
+    @include fonts(52px, bold, white);
     padding-bottom: 10px;
-    font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .hdr h1 {
+    @include fonts(52px, bold, black);
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin-top: 200px;
   }
 
   .hdr-sub h3 {
@@ -589,14 +691,36 @@
     padding-bottom: 2px;
   }
 
+  .hdr-sub p {
+    @include fonts(18px, bold, black);
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
   .header-content {
 
-    .hdr h2 {
+    .hdr h2, .hdr h1 {
       font-size: 32px;
     }
 
+  }
+}
+
+@media (max-width: 815px) {
+  .header-content {
+
+    .hdr h1 {
+      font-size: 32px;
+    }
+
+  }
+}
+
+@media (max-width: 640px) {
+  .header-content {
+    .hdr h1, .hdr-sub p {
+      display: none;
+    }
   }
 }
