@@ -583,24 +583,24 @@ body {
   background-size: cover;
 }
 
-/*.header-worldwildlifespecies {
+.header-worldwildlifearctic {
   justify-content: center;
+}
+.header-worldwildlifearctic:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  min-height: 550px;
+  background: black;
+  background-image: url("images/background/Arctic-Hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 95%;
+}
 
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 550px;
-    min-height: 450px;
-    background-image: url("images/background/Species-Index-Turtle.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    // background-size:100%;
-  }
-}*/
 .header-worldwildlifespecies {
   justify-content: center;
 }
@@ -623,8 +623,13 @@ body {
     height: 50vw;
   }
 
-  .header-worldwildlife:before, .header-worldwildlifespecies:before {
+  .header-worldwildlife:before, .header-worldwildlifespecies:before, .header-worldwildlifearctic:before {
     height: 50vw;
+  }
+}
+@media (max-width: 1600px) {
+  .header-worldwildlifearctic:before {
+    background-size: cover;
   }
 }
 #navbar-container {
@@ -1077,7 +1082,15 @@ body {
   color: black;
   padding-bottom: 10px;
   text-transform: uppercase;
-  color: black;
+  text-align: center;
+  margin-top: 200px;
+}
+.header-content .hwh h1 {
+  font-size: 52px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 10px;
+  text-transform: uppercase;
   text-align: center;
   margin-top: 200px;
 }
@@ -1596,6 +1609,252 @@ body {
     grid-template-rows: 252px 252px;
   }
 }
+.container-nav-progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  position: absolute;
+}
+.container-nav-progress-bar .progress-bar {
+  height: 5px;
+  background: #d77640;
+  width: 0%;
+}
+
+.sticky-menu-acrtic {
+  background: black;
+}
+.sticky-menu-acrtic .active {
+  color: white;
+}
+.sticky-menu-acrtic .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sticky-menu-acrtic a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 50px;
+  padding: 5px 10px;
+}
+.sticky-menu-acrtic .nav-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  line-height: 50px;
+  padding: 5px 10px;
+  background: #444;
+}
+@media (max-width: 900px) {
+  .sticky-menu-acrtic .nav-title {
+    display: none;
+  }
+}
+.sticky-menu-acrtic .nav-links {
+  position: relative;
+  flex: 50%;
+}
+.sticky-menu-acrtic .nav-links ul.nav.nav-active {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  flex-wrap: nowrap;
+}
+.sticky-menu-acrtic .nav-links a {
+  transition: 0.25s;
+}
+.sticky-menu-acrtic .nav-links a:hover {
+  color: white;
+  transition: 0.25s;
+}
+.sticky-menu-acrtic .nav-button {
+  margin-left: 10px;
+}
+.sticky-menu-acrtic .nav-button a {
+  background: #d55c19;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  line-height: 40px;
+  padding: 0 15px;
+  border-radius: 2px;
+}
+.sticky-menu-acrtic .nav-button a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 840px) {
+  .sticky-menu-acrtic a, .sticky-menu-acrtic .nav-button a {
+    font-size: 13px;
+  }
+  .sticky-menu-acrtic a {
+    line-height: 25px;
+  }
+}
+
+.arctic-section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.arctic-section-header .hdr {
+  position: relative;
+}
+.arctic-section-header .hdr .bg-facts {
+  background: url("images/background/bg-patterned-checked-51cb0afb5e9111aef8529ce1f6d871eb1694b6db4c2630db50bd0a5a7c4c357b.jpg") repeat;
+}
+.arctic-section-header .hdr:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -2px;
+  z-index: 1;
+  border: 1px solid #e2dfd7;
+}
+.arctic-section-header .hdr span {
+  font-family: "WfWebfont";
+  font-size: 48px;
+  font-weight: 400;
+  color: #444;
+  text-transform: uppercase;
+  padding: 0 18px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.07);
+}
+
+.arctic-facts-section {
+  background: url("images/background/bg-patterned-checked-51cb0afb5e9111aef8529ce1f6d871eb1694b6db4c2630db50bd0a5a7c4c357b.jpg") repeat;
+  padding: 70px 0;
+}
+.arctic-facts-section .wrapper-facts {
+  background: white;
+  padding: 4% 2% 6%;
+  position: relative;
+  z-index: 1;
+}
+.arctic-facts-section .wrapper-facts:before {
+  border: 10px solid #fff;
+  bottom: -14px;
+  -moz-box-shadow: 0 0 25px rgba(109, 85, 66, 0.1);
+  -webkit-box-shadow: 0 0 25px rgba(109, 85, 66, 0.1);
+  box-shadow: 0 0 25px rgba(109, 85, 66, 0.1);
+  content: "";
+  left: -14px;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  z-index: -1;
+}
+.arctic-facts-section .wrapper-facts p {
+  font-size: 15px;
+  font-weight: normal;
+  color: #444;
+  margin-bottom: 1.25em;
+}
+.arctic-facts-section .wrapper-facts .facts-img {
+  float: right;
+  padding: 2% 3%;
+}
+.arctic-facts-section .wrapper-facts .facts-img .earth-img, .arctic-facts-section .wrapper-facts .facts-img .elephant-img {
+  display: flex;
+  padding: 8px 0;
+}
+.arctic-facts-section .wrapper-facts .facts-img .earth-img img, .arctic-facts-section .wrapper-facts .facts-img .elephant-img img {
+  width: 42px;
+  height: 42px;
+}
+.arctic-facts-section .wrapper-facts .facts-img .earth-img .hdr, .arctic-facts-section .wrapper-facts .facts-img .elephant-img .hdr {
+  padding-left: 5px;
+}
+.arctic-facts-section .wrapper-facts .facts-img .earth-img .hdr p, .arctic-facts-section .wrapper-facts .facts-img .elephant-img .hdr p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777;
+  line-height: 19px;
+  margin: 0;
+}
+.arctic-facts-section .wrapper-facts .facts-img .earth-img .hdr p:nth-child(1), .arctic-facts-section .wrapper-facts .facts-img .elephant-img .hdr p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  color: #777;
+}
+.arctic-facts-section .share-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1% 0;
+  margin-bottom: 2%;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+}
+.arctic-facts-section .share-wrapper .twitter, .arctic-facts-section .share-wrapper .facebook {
+  margin: 0 10px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 1px 8px 1px 6px;
+  background-color: #1b95e0;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.arctic-facts-section .share-wrapper .twitter svg, .arctic-facts-section .share-wrapper .facebook svg {
+  width: 14px;
+  height: 14px;
+}
+.arctic-facts-section .share-wrapper .facebook {
+  background-color: #1877f2;
+}
+.arctic-facts-section .share-wrapper .mail svg {
+  color: #006ea5;
+  width: 24px;
+}
+.arctic-facts-section .lead {
+  display: flex;
+  flex-direction: column;
+}
+.arctic-facts-section .lead span:nth-child(1) {
+  font-size: 12px;
+  font-weight: bold;
+  color: #444;
+}
+.arctic-facts-section span:nth-child(2) a {
+  font-size: 15px;
+  font-weight: normal;
+  color: #006ea5;
+}
+.arctic-facts-section .btn-push-left {
+  left: -37px;
+  position: relative;
+}
+.arctic-facts-section .btn-push-left .btn-simple {
+  padding-top: 2%;
+}
+.arctic-facts-section .btn-push-left .btn-simple a {
+  background: black;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+  padding: 11px 15px 11px 15px;
+  text-transform: uppercase;
+  transition: 0.25s ease-in-out;
+  line-height: 28px;
+  text-decoration: none;
+  letter-spacing: 0.1px;
+}
+.arctic-facts-section .btn-push-left .btn-simple a:hover {
+  color: #006ea5;
+}
+
 .nav-push-left > li.nav-arctic > a {
   color: black;
 }

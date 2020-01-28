@@ -31,7 +31,7 @@
 
 }
 
-/*.header-worldwildlifespecies {
+.header-worldwildlifearctic {
   justify-content: center;
 
   &:before {
@@ -40,15 +40,16 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 550px;
-    min-height: 450px;
-    background-image: url("images/background/Species-Index-Turtle.jpg");
+    height: 600px;
+    min-height: 550px;
+    background: black;
+    background-image: url("images/background/Arctic-Hero.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    // background-size:100%;
+    //background-size: cover;
+     background-size:95%;
   }
-}*/
+}
 
 .header-worldwildlifespecies {
   justify-content: center;
@@ -67,6 +68,7 @@
     background-size: cover;
     // background-size:100%;
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -74,10 +76,19 @@
     height: 50vw;
   }
 
-  .header-worldwildlife, .header-worldwildlifespecies {
+  .header-worldwildlife, .header-worldwildlifespecies, .header-worldwildlifearctic {
 
     &:before {
       height: 50vw;
+    }
+  }
+
+}
+
+@media (max-width: 1600px) {
+  .header-worldwildlifearctic{
+    &:before {
+      background-size: cover;
     }
 
   }
@@ -681,7 +692,13 @@
     @include fonts(52px, bold, black);
     padding-bottom: 10px;
     text-transform: uppercase;
-    color: black;
+    text-align: center;
+    margin-top: 200px;
+  }
+  .hwh h1 {
+    @include fonts(52px, bold, white);
+    padding-bottom: 10px;
+    text-transform: uppercase;
     text-align: center;
     margin-top: 200px;
   }

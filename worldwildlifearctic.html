@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="sass-boilerplate/stylesheets/main.css">
     <title>worldwildlifearctic</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".nav-active" data-offset="50">
 <header id="header" class="header-worldwildlifearctic">
-    <div id="navbar-container">
+    <div id="navbar-container" class="navbar-container-background">
         <div class="container">
             <nav id="desktop-navbar" class="navbar navbar-expand-md">
                 <div class="navbar-brand"><img src="sass-boilerplate/stylesheets/images/logo/logo-header.png"
@@ -21,7 +21,7 @@
                     <div class="navbar-container">
 
                         <ul class="navbar-nav nav-push-left">
-                            <li class="nav-item nav-arctic">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Our Work</a>
 
                                 <div class="sub-menu">
@@ -52,7 +52,7 @@
                                 </div>
 
                             </li>
-                            <li class="nav-item nav-arctic">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Species</a>
 
                                 <div class="sub-menu">
@@ -84,7 +84,7 @@
                                 </div>
 
                             </li>
-                            <li class="nav-item nav-arctic">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Places</a>
 
                                 <div class="sub-menu">
@@ -121,7 +121,7 @@
                         </ul>
 
                         <ul class="navbar-nav nav-push-right">
-                            <li class="nav-item nav-arctic">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">About Us</a>
 
                                 <div class="dark-sub-menu">
@@ -136,7 +136,7 @@
                                 </div>
 
                             </li>
-                            <li class="nav-item nav-arctic">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">How to Help</a>
 
                                 <div class="dark-sub-menu">
@@ -296,51 +296,178 @@
     </div>
 
     <div class=" header-content">
-        <div class="hdr">
-            <h1>
-                Protecting wildlife for a <br> healthy planet</h1>
-        </div>
-        <div class="hdr-sub">
-            <p>WWF works in unity with many to achieve lasting conservation results. Together, we can protect
-                <br> and
-                restore species and their habitats.</p>
+        <div class="hwh">
+            <h1>Arctic</h1>
         </div>
     </div>
 
 </header>
+
 <main id="main">
-    <section class="help-project-section">
+
+
+    <section class="sticky-menu-acrtic sticky-top">
+
         <div class="container">
-            <div class="down-header-content">
-                <div class="hdr">
-                    <h1>
-                        Protecting wildlife for a <br> healthy planet</h1>
-                </div>
-                <div class="hdr-sub">
-                    <p>WWF works in unity with many to achieve lasting conservation results. Together, we can protect and
-                        restore species and their habitats.</p>
-                </div>
+            <div class="nav-title">
+                <ul class="nav">
+                    <li class="nav-item">
+                        Arctic
+                    </li>
+                </ul>
             </div>
 
-            <div class="row">
-                <div class="col-md-8 help-project">
-                    <a href="#">
-                        <h2>Adopt an Animal</h2>
-                    </a>
-                    <a href="#">
-                        <p>Give a gift that will help protect the future of nature. Make a symbolic adoption in support
-                            of
-                            WWF's global efforts.</p>
-                    </a>
+            <div class="nav-links">
+                <div class="container-nav-progress-bar">
+                    <div class="progress-bar" id="myBar"></div>
+                </div>
+
+                <ul class="nav nav-active">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facts-href">Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#species-href">Species</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#people-href">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#threats-href">Threats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wwf-href">What WWF is Doing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#canhelp-href">How You Can Help</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-button">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adopt a Polar Bear</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section arctic-facts-section " id="facts-href">
+
+        <div class="arctic-section-header">
+            <div class="hdr">
+                <span class="bg-facts"> Facts</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper-facts">
+                <div class="facts-img">
+                    <img src="sass-boilerplate/stylesheets/images/background/arcticsection/Arctic_region.png" alt="map">
+                    <div class="earth-img">
+                        <img src="sass-boilerplate/stylesheets/images/background/arcticsection/Earth.PNG" alt="earth">
+                        <div class="hdr">
+                            <p>CONTINENT</p>
+                            <p>North America</p>
+                        </div>
+                    </div>
+                    <div class="elephant-img">
+                        <img src="sass-boilerplate/stylesheets/images/background/arcticsection/elephant.PNG"
+                             alt="elephant">
+                        <div class="hdr">
+                            <p>SPECIES</p>
+                            <p>Polar bear, Arctic wolf, Arctic fox, Pacific salmon, Seals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    The Arctic is a region like no other in the world and it’s warming twice as fast, bringing with
+                    it rapid change impacting life on land and at sea.
+                </p>
+                <p>
+                    About 4 million people live in the Arctic, spread out over eight countries, including the United
+                    States. Diverse landscapes—from the sea ice to coastal wetlands, upland tundra, mountains, wide
+                    rivers, and the sea itself—support abundant wildlife and many cultures. Of all the wildlife in
+                    the Arctic, the polar bear is the most fitting icon for this region. It's amazing adaptation to
+                    life in the harsh Arctic environment makes it an impressive species.
+                </p>
+                <p>
+                    Within America’s Arctic, the remarkably productive waters of the Bering Sea attract marine
+                    mammals, such as gray whales, which travel great distances to forage and raise their young.
+                    Almost half of the fish caught in the United States comes from here making fisheries vital to
+                    local livelihoods. Across the Bering Sea in Russia, the Kamchatka Peninsula’s river systems
+                    produce up to one-quarter of all wild Pacific salmon. The salmon provide nourishment to other
+                    wildlife, including the Kamchatka brown bear.
+                </p>
+                <p>The Arctic, including the Bering, Beaufort and Chukchi seas, now faces an uncertain future due to
+                    climate change, mining, shipping, oil and gas development, and overfishing.
+                </p>
+
+                <div class="share-wrapper">
+                    <div class="twitter">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
+                             class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                        </svg>
+                        Tweet</div>
+                    <div class="mail">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
+                             class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                        </svg>
+                    </div>
+                    <div class="facebook">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook"
+                             class="svg-inline--fa fa-facebook fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                        </svg>
+                        Share 231</div>
+                </div>
+
+                <div class="lead">
+                    <span>HABITATS</span>
+                    <span>
+        <a href="#">Ocean Habitat</a>,
+        <a href="#"> Polar Regions</a>
+    </span>
+                </div>
+
+                <div class="btn-push-left">
+                    <div class="btn-simple"><a href="#">Browse Photos & Videos <span> > </span></a></div>
                 </div>
 
             </div>
 
         </div>
     </section>
-    <div class="container bg-secondary">
-        main
+
+    <div class="section arctic-species-section" id="species-href">
+        2
     </div>
+
+    <div class="section arctic-people-section" id="people-href">
+        3
+    </div>
+
+    <div class="section arctic-threats-section" id="threats-href">
+        4
+    </div>
+
+    <div class="section arctic-wwf-section" id="wwf-href">
+        5
+    </div>
+
+    <div class="section arctic-canhelp-section" id="canhelp-href">
+        6
+    </div>
+
 </main>
 <footer id="footer">
     <div class="dark-footer">
@@ -442,6 +569,7 @@
 </footer>
 
 <script src="sass-boilerplate/stylesheets/layout/header.js"></script>
+<script src="sass-boilerplate/stylesheets/pages/worldwildlifearctic.js"></script>
 <script src="sass-boilerplate/stylesheets/vendors/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="sass-boilerplate/stylesheets/vendors/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
