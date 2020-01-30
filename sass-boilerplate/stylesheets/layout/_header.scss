@@ -49,6 +49,12 @@
     //background-size: cover;
      background-size:95%;
   }
+
+  @media (max-width: 770px) {
+    .header-content{
+     display: none;
+  }
+  }
 }
 
 .header-worldwildlifespecies {
