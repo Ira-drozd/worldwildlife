@@ -1,6 +1,7 @@
 
 (function () {
 
+
      let list = document.querySelector(".circle-card-species");//карусель
      let widthCarusel = document.querySelector(".circle-card-species").offsetWidth;//467
 
@@ -33,5 +34,7 @@ function myFunction() {
     let scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+
 
 

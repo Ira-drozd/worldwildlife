@@ -2,45 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ac4ca11-9cbc-4c76-9efd-0191af9794b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/GPN200160_Threats_section_image_cargo_ship.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/HI_200416.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/HI_229663.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/MID_302892_GlobalWarmingImages_WWF-Canon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/Small_WW1113824.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/WW214882.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/_WW185527.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/experts/Aplin_WW263698.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/experts/Elisabeth_bio_picture_GOOD.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/experts/Margaret_Williams_063.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/experts/Medium_WW263685.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/publications/Capture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/publications/Capture2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/publications/Capture3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/publications/Capture4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/arcticsection/publications/transparent-s06b906659d-1b52e2a954cce64eb6c59f448a762d9369be2621dd6cdb24958379f21bc49b4a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/bg-dark-patterned-25ffd5decf37fe354a515b94e84b82763a8d0379f917edc3829a9eed362145d0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/background/bg-patterned-e2dd5fbf93d51984d5fcff9b9c1e9006810dbbdf4ba42186bf705b016ee280bd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/circlecardspecies/card-item-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/images/icon/th-solid.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/_worldwildlifearctic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/_worldwildlifearctic.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/worldwildlifearctic.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/worldwildlifearctic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/layout/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/worldwildlifearctic.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifearctic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/worldwildlifespecies.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifespecies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worldwildlife.html" beforeDir="false" afterPath="$PROJECT_DIR$/worldwildlife.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worldwildlifearctic.html" beforeDir="false" afterPath="$PROJECT_DIR$/worldwildlifearctic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worldwildlifespecies.html" beforeDir="false" afterPath="$PROJECT_DIR$/worldwildlifespecies.html" afterDir="false" />
     </list>
@@ -89,14 +55,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate" />
+      <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\js" />
+      <recent name="C:\Users\User\PhpstormProjects\worldwildlife" />
       <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\stylesheets\images\icon" />
       <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\stylesheets\images\background\arcticsection" />
-      <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\stylesheets\images\background" />
-      <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\stylesheets\images\background\arcticsection\experts" />
-      <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\stylesheets\images\background\arcticsection\publications" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.worldwildlife.html">
+  <component name="RunManager" selected="JavaScript Debug.worldwildlifespecies.html">
     <configuration name="worldwildlife.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/worldwildlife/worldwildlife.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -108,9 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.worldwildlife.html" />
         <item itemvalue="JavaScript Debug.worldwildlifespecies.html" />
         <item itemvalue="JavaScript Debug.worldwildlifearctic.html" />
+        <item itemvalue="JavaScript Debug.worldwildlife.html" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +120,7 @@
       <workItem from="1580299356659" duration="4073000" />
       <workItem from="1580303511870" duration="9121000" />
       <workItem from="1580381641113" duration="27211000" />
+      <workItem from="1580412417010" duration="711000" />
     </task>
     <servers />
   </component>
@@ -173,112 +140,112 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579165672996" />
-    <state width="1637" height="63" key="GridCell.Tab.0.bottom" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.0.bottom" timestamp="1580413132113">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578666938309" />
-    <state width="1637" height="63" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132113" />
     <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.0.center" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.0.center" timestamp="1580413132113">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578666938309" />
-    <state width="1637" height="63" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132113" />
     <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843066" />
-    <state width="1637" height="63" key="GridCell.Tab.0.left" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.0.left" timestamp="1580413132113">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578666938309" />
-    <state width="1637" height="63" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132113" />
     <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843066" />
-    <state width="1637" height="63" key="GridCell.Tab.0.right" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.0.right" timestamp="1580413132113">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578666938309" />
-    <state width="1637" height="63" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132113" />
     <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843066" />
-    <state width="1637" height="63" key="GridCell.Tab.1.bottom" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.1.bottom" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.1.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.1.center" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.1.center" timestamp="1580413132113">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578666938309" />
-    <state width="1637" height="63" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.1.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132113" />
     <state width="1877" height="2" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.1.left" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.1.left" timestamp="1580413132113">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578666938309" />
-    <state width="1637" height="63" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.1.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132113" />
     <state width="1877" height="2" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.1.right" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.1.right" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.1.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.2.bottom" timestamp="1580411952344">
+    <state width="1637" height="63" key="GridCell.Tab.2.bottom" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952344" />
+    <state width="1637" height="63" key="GridCell.Tab.2.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.2.center" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.2.center" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.2.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.2.left" timestamp="1580411952343">
+    <state width="1637" height="63" key="GridCell.Tab.2.left" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952343" />
+    <state width="1637" height="63" key="GridCell.Tab.2.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.2.right" timestamp="1580411952344">
+    <state width="1637" height="63" key="GridCell.Tab.2.right" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952344" />
+    <state width="1637" height="63" key="GridCell.Tab.2.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.3.bottom" timestamp="1580411952344">
+    <state width="1637" height="63" key="GridCell.Tab.3.bottom" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578666938311" />
-    <state width="1637" height="63" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952344" />
+    <state width="1637" height="63" key="GridCell.Tab.3.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.3.center" timestamp="1580411952344">
+    <state width="1637" height="63" key="GridCell.Tab.3.center" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952344" />
+    <state width="1637" height="63" key="GridCell.Tab.3.center/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.3.left" timestamp="1580411952344">
+    <state width="1637" height="63" key="GridCell.Tab.3.left" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952344" />
+    <state width="1637" height="63" key="GridCell.Tab.3.left/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
-    <state width="1637" height="63" key="GridCell.Tab.3.right" timestamp="1580411952344">
+    <state width="1637" height="63" key="GridCell.Tab.3.right" timestamp="1580413132114">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1323" height="223" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1578666938310" />
-    <state width="1637" height="63" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580411952344" />
+    <state width="1637" height="63" key="GridCell.Tab.3.right/0.0.1680.1010@0.0.1680.1010" timestamp="1580413132114" />
     <state width="1877" height="2" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579273843067" />
     <state x="-1661" y="10" key="SettingsEditor" timestamp="1579165150612">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578665527181" />
     <state x="-1661" y="10" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579165150612" />
-    <state x="536" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1580381640831">
+    <state x="536" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1580412517312">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="436" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578665598552" />
-    <state x="536" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1580381640831" />
+    <state x="536" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1580412517312" />
     <state x="-1307" y="340" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579261525605" />
     <state x="545" y="219" width="672" height="659" key="search.everywhere.popup" timestamp="1579445561304">
       <screen x="0" y="0" width="1680" height="1010" />
