@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4ac4ca11-9cbc-4c76-9efd-0191af9794b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/layout/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/worldwildlifearctic.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifearctic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass-boilerplate/stylesheets/pages/worldwildlifespecies.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifespecies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worldwildlife.html" beforeDir="false" afterPath="$PROJECT_DIR$/worldwildlife.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worldwildlifearctic.html" beforeDir="false" afterPath="$PROJECT_DIR$/worldwildlifearctic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/worldwildlifespecies.html" beforeDir="false" afterPath="$PROJECT_DIR$/worldwildlifespecies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass-boilerplate/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifearctic.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifearctic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifespecies.js" beforeDir="false" afterPath="$PROJECT_DIR$/sass-boilerplate/js/worldwildlifespecies.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,8 +40,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ira-Hw-FE/Class13/Task3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,7 +61,19 @@
       <recent name="C:\Users\User\PhpstormProjects\worldwildlife\sass-boilerplate\stylesheets\images\background\arcticsection" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.worldwildlifespecies.html">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.worldwildlifearctic.html">
     <configuration name="worldwildlife.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/worldwildlife/worldwildlife.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -72,25 +83,17 @@
     <configuration name="worldwildlifespecies.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/worldwildlife/worldwildlifespecies.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="worldwildlifespecies.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="worldwildlifespecies.js" working-dir="$PROJECT_DIR$/sass-boilerplate/js">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.worldwildlifespecies.html" />
         <item itemvalue="JavaScript Debug.worldwildlifearctic.html" />
+        <item itemvalue="JavaScript Debug.worldwildlifespecies.html" />
+        <item itemvalue="Node.js.worldwildlifespecies.js" />
         <item itemvalue="JavaScript Debug.worldwildlife.html" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -121,11 +124,28 @@
       <workItem from="1580303511870" duration="9121000" />
       <workItem from="1580381641113" duration="27211000" />
       <workItem from="1580412417010" duration="711000" />
+      <workItem from="1583321580326" duration="616000" />
+      <workItem from="1586800200964" duration="666000" />
+      <workItem from="1587039386420" duration="728000" />
+      <workItem from="1587402899954" duration="2946000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="582" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578422681577">
@@ -241,11 +261,11 @@
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578665527181" />
     <state x="-1661" y="10" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579165150612" />
-    <state x="536" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1580412517312">
+    <state x="536" y="330" key="com.intellij.ide.util.TipDialog" timestamp="1583321580610">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="436" y="238" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578665598552" />
-    <state x="536" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1580412517312" />
+    <state x="536" y="330" key="com.intellij.ide.util.TipDialog/0.0.1680.1010@0.0.1680.1010" timestamp="1583321580610" />
     <state x="-1307" y="340" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1579261525605" />
     <state x="545" y="219" width="672" height="659" key="search.everywhere.popup" timestamp="1579445561304">
       <screen x="0" y="0" width="1680" height="1010" />
